@@ -1,0 +1,2112 @@
+DIGEST fd47a119037fb6fc5c081a8720cc73b0
+FSLF.WPgen
+R96:100 SLF.WPsem <> <> lib
+R123:125 SLF.LibSepVar <> var def
+R147:150 Coq.Init.Datatypes <> bool ind
+R172:174 SLF.LibSepReference <> val ind
+R196:199 SLF.LibSepReference <> heap def
+R246:250 SLF.LibSepReference SepSimplArgs hprop def
+R275:276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R272:274 SLF.LibSepReference <> val ind
+R277:281 SLF.LibSepReference SepSimplArgs hprop def
+ax 13804:13809 <> wp_val
+binder 13820:13820 <> v:1
+binder 13822:13822 <> Q:2
+R13830:13834 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R13827:13827 SLF.WPgen <> Q:2 var
+R13829:13829 SLF.WPgen <> v:1 var
+R13835:13836 SLF.WPsem <> wp def
+R13850:13850 SLF.WPgen <> Q:2 var
+R13839:13845 SLF.LibSepReference <> trm_val constr
+R13847:13847 SLF.WPgen <> v:1 var
+ax 14551:14556 <> wp_fun
+binder 14567:14567 <> x:4
+binder 14569:14570 <> t1:5
+binder 14572:14572 <> Q:6
+R14593:14597 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R14577:14577 SLF.WPgen <> Q:6 var
+R14580:14586 SLF.LibSepReference <> val_fun constr
+R14590:14591 SLF.WPgen <> t1:5 var
+R14588:14588 SLF.WPgen <> x:4 var
+R14598:14599 SLF.WPsem <> wp def
+R14616:14616 SLF.WPgen <> Q:6 var
+R14602:14608 SLF.LibSepReference <> trm_fun constr
+R14612:14613 SLF.WPgen <> t1:5 var
+R14610:14610 SLF.WPgen <> x:4 var
+ax 15807:15812 <> wp_seq
+binder 15823:15824 <> t1:8
+binder 15826:15827 <> t2:9
+binder 15829:15829 <> Q:10
+R15858:15862 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R15834:15835 SLF.WPsem <> wp def
+binder 15845:15845 <> v:11
+R15850:15851 SLF.WPsem <> wp def
+R15856:15856 SLF.WPgen <> Q:10 var
+R15853:15854 SLF.WPgen <> t2:9 var
+R15837:15838 SLF.WPgen <> t1:8 var
+R15863:15864 SLF.WPsem <> wp def
+R15882:15882 SLF.WPgen <> Q:10 var
+R15867:15873 SLF.LibSepReference <> trm_seq constr
+R15878:15879 SLF.WPgen <> t2:9 var
+R15875:15876 SLF.WPgen <> t1:8 var
+ax 16642:16647 <> wp_let
+binder 16658:16658 <> x:13
+binder 16660:16661 <> t1:14
+binder 16663:16664 <> t2:15
+binder 16666:16666 <> Q:16
+R16707:16711 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R16671:16672 SLF.WPsem <> wp def
+binder 16682:16682 <> v:17
+R16687:16688 SLF.WPsem <> wp def
+R16705:16705 SLF.WPgen <> Q:16 var
+R16691:16695 SLF.LibSepReference <> subst def
+R16701:16702 SLF.WPgen <> t2:15 var
+R16699:16699 SLF.WPgen <> v:17 var
+R16697:16697 SLF.WPgen <> x:13 var
+R16674:16675 SLF.WPgen <> t1:14 var
+R16712:16713 SLF.WPsem <> wp def
+R16733:16733 SLF.WPgen <> Q:16 var
+R16716:16722 SLF.LibSepReference <> trm_let constr
+R16729:16730 SLF.WPgen <> t2:15 var
+R16726:16727 SLF.WPgen <> t1:14 var
+R16724:16724 SLF.WPgen <> x:13 var
+prf 18803:18808 <> wp_var
+binder 18819:18819 <> x:19
+binder 18821:18821 <> Q:20
+R18834:18838 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R18826:18827 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R18833:18833 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R18828:18832 Coq.Init.Logic <> False ind
+R18839:18840 SLF.WPsem <> wp def
+R18854:18854 SLF.WPgen <> Q:20 var
+R18843:18849 SLF.LibSepReference <> trm_var constr
+R18851:18851 SLF.WPgen <> x:19 var
+R18901:18909 SLF.LibSepReference SepSimplArgs hpure_inv thm
+R18901:18909 SLF.LibSepReference SepSimplArgs hpure_inv thm
+prf 18935:18944 <> triple_var
+binder 18955:18955 <> x:21
+binder 18957:18957 <> H:22
+binder 18959:18959 <> Q:23
+R18969:18974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18964:18968 Coq.Init.Logic <> False ind
+R18975:18980 SLF.LibSepReference <> triple def
+R18996:18996 SLF.WPgen <> Q:23 var
+R18994:18994 SLF.WPgen <> H:22 var
+R18983:18989 SLF.LibSepReference <> trm_var constr
+R18991:18991 SLF.WPgen <> x:21 var
+prf 19039:19049 <> triple_var'
+binder 19060:19060 <> x:24
+binder 19062:19062 <> Q:25
+R19067:19072 SLF.LibSepReference <> triple def
+R19095:19095 SLF.WPgen <> Q:25 var
+R19086:19087 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R19093:19093 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R19088:19092 Coq.Init.Logic <> False ind
+R19075:19081 SLF.LibSepReference <> trm_var constr
+R19083:19083 SLF.WPgen <> x:24 var
+R19130:19137 SLF.WPsem <> wp_equiv thm
+R19130:19137 SLF.WPsem <> wp_equiv thm
+R19130:19137 SLF.WPsem <> wp_equiv thm
+R19147:19152 SLF.WPgen <> wp_var thm
+R19147:19152 SLF.WPgen <> wp_var thm
+ax 21690:21694 <> wp_if
+R21708:21711 Coq.Init.Datatypes <> bool ind
+binder 21706:21706 <> b:26
+binder 21714:21715 <> t1:27
+binder 21717:21718 <> t2:28
+binder 21720:21720 <> Q:29
+R21725:21725 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R21760:21765 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R21729:21729 SLF.WPgen <> b:26 var
+R21752:21753 SLF.WPsem <> wp def
+R21758:21758 SLF.WPgen <> Q:29 var
+R21755:21756 SLF.WPgen <> t2:28 var
+R21737:21738 SLF.WPsem <> wp def
+R21743:21743 SLF.WPgen <> Q:29 var
+R21740:21741 SLF.WPgen <> t1:27 var
+R21766:21767 SLF.WPsem <> wp def
+R21797:21797 SLF.WPgen <> Q:29 var
+R21770:21775 SLF.LibSepReference <> trm_if constr
+R21793:21794 SLF.WPgen <> t2:28 var
+R21790:21791 SLF.WPgen <> t1:27 var
+R21778:21785 SLF.LibSepReference <> val_bool constr
+R21787:21787 SLF.WPgen <> b:26 var
+def 25120:25122 <> ctx
+R25134:25137 Coq.Init.Datatypes <> list ind
+R25143:25145 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R25140:25142 SLF.LibSepVar <> var def
+R25146:25148 SLF.LibSepReference <> val ind
+def 25925:25930 <> lookup
+R25935:25937 SLF.LibSepVar <> var def
+binder 25933:25933 <> x:31
+R25943:25945 SLF.WPgen <> ctx def
+binder 25941:25941 <> E:32
+R25950:25955 Coq.Init.Datatypes <> option ind
+R25957:25959 SLF.LibSepReference <> val ind
+R25972:25972 SLF.WPgen <> E:32 var
+R25983:25985 Coq.Init.Datatypes <> nil constr
+R25990:25993 Coq.Init.Datatypes <> None constr
+R26004:26005 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R25999:25999 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26001:26001 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26003:26003 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26015:26020 SLF.LibSepVar <> var_eq def
+R26022:26022 SLF.WPgen <> x:31 var
+R26081:26086 SLF.WPgen <> lookup:33 def
+R26088:26088 SLF.WPgen <> x:31 var
+R26050:26053 Coq.Init.Datatypes <> Some constr
+def 26231:26233 <> rem
+R26238:26240 SLF.LibSepVar <> var def
+binder 26236:26236 <> x:35
+R26246:26248 SLF.WPgen <> ctx def
+binder 26244:26244 <> E:36
+R26253:26255 SLF.WPgen <> ctx def
+R26268:26268 SLF.WPgen <> E:36 var
+R26279:26281 Coq.Init.Datatypes <> nil constr
+R26286:26288 Coq.Init.Datatypes <> nil constr
+R26299:26300 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R26294:26294 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26296:26296 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26298:26298 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26324:26326 SLF.WPgen <> rem:37 def
+R26328:26328 SLF.WPgen <> x:35 var
+binder 26317:26319 <> E1':39
+R26345:26350 SLF.LibSepVar <> var_eq def
+R26352:26352 SLF.WPgen <> x:35 var
+R26375:26376 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R26370:26370 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26372:26372 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26374:26374 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R26377:26379 SLF.WPgen <> E1':39 var
+R26361:26363 SLF.WPgen <> E1':39 var
+def 26648:26653 <> isubst
+R26658:26660 SLF.WPgen <> ctx def
+binder 26656:26656 <> E:40
+R26666:26668 SLF.LibSepReference <> trm ind
+binder 26664:26664 <> t:41
+R26673:26675 SLF.LibSepReference <> trm ind
+R26688:26688 SLF.WPgen <> t:41 var
+R26699:26705 SLF.LibSepReference <> trm_val constr
+R26725:26731 SLF.LibSepReference <> trm_var constr
+R26751:26756 SLF.WPgen <> lookup def
+R26760:26760 SLF.WPgen <> E:40 var
+R26776:26779 Coq.Init.Datatypes <> None constr
+R26784:26784 SLF.WPgen <> t:41 var
+R26795:26798 Coq.Init.Datatypes <> Some constr
+R26822:26828 SLF.LibSepReference <> trm_fun constr
+R26845:26851 SLF.LibSepReference <> trm_fun constr
+R26856:26861 SLF.WPgen <> isubst:42 def
+R26864:26866 SLF.WPgen <> rem def
+R26870:26870 SLF.WPgen <> E:40 var
+R26881:26887 SLF.LibSepReference <> trm_fix constr
+R26906:26912 SLF.LibSepReference <> trm_fix constr
+R26919:26924 SLF.WPgen <> isubst:42 def
+R26927:26929 SLF.WPgen <> rem def
+R26934:26936 SLF.WPgen <> rem def
+R26940:26940 SLF.WPgen <> E:40 var
+R26952:26958 SLF.LibSepReference <> trm_app constr
+R26976:26982 SLF.LibSepReference <> trm_app constr
+R26999:27004 SLF.WPgen <> isubst:42 def
+R27006:27006 SLF.WPgen <> E:40 var
+R26985:26990 SLF.WPgen <> isubst:42 def
+R26992:26992 SLF.WPgen <> E:40 var
+R27016:27022 SLF.LibSepReference <> trm_seq constr
+R27040:27046 SLF.LibSepReference <> trm_seq constr
+R27063:27068 SLF.WPgen <> isubst:42 def
+R27070:27070 SLF.WPgen <> E:40 var
+R27049:27054 SLF.WPgen <> isubst:42 def
+R27056:27056 SLF.WPgen <> E:40 var
+R27080:27086 SLF.LibSepReference <> trm_let constr
+R27106:27112 SLF.LibSepReference <> trm_let constr
+R27131:27136 SLF.WPgen <> isubst:42 def
+R27139:27141 SLF.WPgen <> rem def
+R27145:27145 SLF.WPgen <> E:40 var
+R27117:27122 SLF.WPgen <> isubst:42 def
+R27124:27124 SLF.WPgen <> E:40 var
+R27156:27161 SLF.LibSepReference <> trm_if constr
+R27182:27187 SLF.LibSepReference <> trm_if constr
+R27218:27223 SLF.WPgen <> isubst:42 def
+R27225:27225 SLF.WPgen <> E:40 var
+R27204:27209 SLF.WPgen <> isubst:42 def
+R27211:27211 SLF.WPgen <> E:40 var
+R27190:27195 SLF.WPgen <> isubst:42 def
+R27197:27197 SLF.WPgen <> E:40 var
+mod 30965:30974 <> WpgenExec1
+def 31160:31164 WpgenExec1 wpgen
+R31169:31171 SLF.WPgen <> ctx def
+binder 31167:31167 <> E:44
+R31177:31179 SLF.LibSepReference <> trm ind
+binder 31175:31175 <> t:45
+R31188:31189 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31185:31187 SLF.LibSepReference <> val ind
+R31190:31194 SLF.LibSepReference SepSimplArgs hprop def
+binder 31183:31183 <> Q:46
+R31199:31203 SLF.LibSepReference SepSimplArgs hprop def
+R31216:31216 SLF.WPgen <> t:45 var
+R31227:31233 SLF.LibSepReference <> trm_val constr
+R31240:31240 SLF.WPgen <> Q:46 var
+R31248:31254 SLF.LibSepReference <> trm_fun constr
+R31264:31264 SLF.WPgen <> Q:46 var
+R31267:31273 SLF.LibSepReference <> val_fun constr
+R31278:31283 SLF.WPgen <> isubst def
+R31286:31288 SLF.WPgen <> rem def
+R31292:31292 SLF.WPgen <> E:44 var
+R31304:31310 SLF.LibSepReference <> trm_fix constr
+R31322:31322 SLF.WPgen <> Q:46 var
+R31325:31331 SLF.LibSepReference <> val_fix constr
+R31338:31343 SLF.WPgen <> isubst def
+R31346:31348 SLF.WPgen <> rem def
+R31353:31355 SLF.WPgen <> rem def
+R31359:31359 SLF.WPgen <> E:44 var
+R31372:31378 SLF.LibSepReference <> trm_seq constr
+R31389:31393 SLF.WPgen <> wpgen:47 def
+binder 31405:31405 <> v:49
+R31410:31414 SLF.WPgen <> wpgen:47 def
+R31421:31421 SLF.WPgen <> Q:46 var
+R31416:31416 SLF.WPgen <> E:44 var
+R31395:31395 SLF.WPgen <> E:44 var
+R31428:31434 SLF.LibSepReference <> trm_let constr
+R31447:31451 SLF.WPgen <> wpgen:47 def
+binder 31463:31463 <> v:50
+R31468:31472 SLF.WPgen <> wpgen:47 def
+R31488:31488 SLF.WPgen <> Q:46 var
+R31480:31481 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R31475:31475 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31477:31477 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31479:31479 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R31478:31478 SLF.WPgen <> v:50 var
+R31482:31482 SLF.WPgen <> E:44 var
+R31453:31453 SLF.WPgen <> E:44 var
+R31495:31501 SLF.LibSepReference <> trm_var constr
+R31521:31526 SLF.WPgen <> lookup def
+R31530:31530 SLF.WPgen <> E:44 var
+R31546:31549 Coq.Init.Datatypes <> Some constr
+R31556:31556 SLF.WPgen <> Q:46 var
+R31569:31572 Coq.Init.Datatypes <> None constr
+R31577:31578 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31584:31584 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31579:31583 Coq.Init.Logic <> False ind
+R31601:31607 SLF.LibSepReference <> trm_app constr
+R31618:31625 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R31627:31628 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+binder 31626:31626 <> H:51
+R31630:31633 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R31629:31629 SLF.WPgen <> H:51 var
+R31634:31635 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31659:31659 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31636:31641 SLF.LibSepReference <> triple def
+R31658:31658 SLF.WPgen <> Q:46 var
+R31656:31656 SLF.WPgen <> H:51 var
+R31644:31649 SLF.WPgen <> isubst def
+R31653:31653 SLF.WPgen <> t:45 var
+R31651:31651 SLF.WPgen <> E:44 var
+R31665:31670 SLF.LibSepReference <> trm_if constr
+R31690:31698 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R31705:31707 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R31701:31704 Coq.Init.Datatypes <> bool ind
+binder 31699:31699 <> b:52
+R31736:31748 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R31793:31793 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R31708:31709 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31735:31735 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R31712:31714 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31715:31721 SLF.LibSepReference <> trm_val constr
+R31724:31731 SLF.LibSepReference <> val_bool constr
+R31733:31733 SLF.WPgen <> b:52 var
+R31752:31752 SLF.WPgen <> b:52 var
+R31780:31784 SLF.WPgen <> wpgen:47 def
+R31786:31786 SLF.WPgen <> E:44 var
+R31792:31792 SLF.WPgen <> Q:46 var
+R31760:31764 SLF.WPgen <> wpgen:47 def
+R31766:31766 SLF.WPgen <> E:44 var
+R31772:31772 SLF.WPgen <> Q:46 var
+ax 32023:32033 WpgenExec1 wpgen_sound
+binder 32044:32044 <> E:53
+binder 32046:32046 <> t:54
+binder 32048:32048 <> Q:55
+R32065:32069 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R32054:32058 SLF.WPgen WpgenExec1 wpgen def
+R32064:32064 SLF.WPgen <> Q:55 var
+R32062:32062 SLF.WPgen <> t:54 var
+R32060:32060 SLF.WPgen <> E:53 var
+R32070:32071 SLF.WPsem <> wp def
+R32086:32086 SLF.WPgen <> Q:55 var
+R32074:32079 SLF.WPgen <> isubst def
+R32083:32083 SLF.WPgen <> t:54 var
+R32081:32081 SLF.WPgen <> E:53 var
+ax 32410:32423 WpgenExec1 triple_app_fun
+binder 32434:32434 <> x:57
+binder 32436:32437 <> v1:58
+binder 32439:32440 <> v2:59
+binder 32442:32443 <> t1:60
+binder 32445:32445 <> H:61
+binder 32447:32447 <> Q:62
+R32469:32474 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32454:32456 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R32452:32453 SLF.WPgen <> v1:58 var
+R32457:32463 SLF.LibSepReference <> val_fun constr
+R32467:32468 SLF.WPgen <> t1:60 var
+R32465:32465 SLF.WPgen <> x:57 var
+R32501:32506 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32475:32480 SLF.LibSepReference <> triple def
+R32500:32500 SLF.WPgen <> Q:62 var
+R32498:32498 SLF.WPgen <> H:61 var
+R32483:32487 SLF.LibSepReference <> subst def
+R32494:32495 SLF.WPgen <> t1:60 var
+R32491:32492 SLF.WPgen <> v2:59 var
+R32489:32489 SLF.WPgen <> x:57 var
+R32507:32512 SLF.LibSepReference <> triple def
+R32532:32532 SLF.WPgen <> Q:62 var
+R32530:32530 SLF.WPgen <> H:61 var
+R32515:32521 SLF.LibSepReference <> trm_app constr
+R32526:32527 SLF.WPgen <> v2:59 var
+R32523:32524 SLF.WPgen <> v1:58 var
+ax 33327:33351 WpgenExec1 triple_app_fun_from_wpgen
+binder 33362:33363 <> v1:64
+binder 33365:33366 <> v2:65
+binder 33368:33368 <> x:66
+binder 33370:33371 <> t1:67
+binder 33373:33373 <> H:68
+binder 33375:33375 <> Q:69
+R33397:33402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33382:33384 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R33380:33381 SLF.WPgen <> v1:64 var
+R33385:33391 SLF.LibSepReference <> val_fun constr
+R33395:33396 SLF.WPgen <> t1:67 var
+R33393:33393 SLF.WPgen <> x:66 var
+R33433:33438 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33404:33408 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R33403:33403 SLF.WPgen <> H:68 var
+R33409:33413 SLF.WPgen WpgenExec1 wpgen def
+R33432:33432 SLF.WPgen <> Q:69 var
+R33429:33430 SLF.WPgen <> t1:67 var
+R33422:33423 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R33416:33416 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R33418:33418 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R33421:33421 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R33417:33417 SLF.WPgen <> x:66 var
+R33419:33420 SLF.WPgen <> v2:65 var
+R33424:33426 Coq.Init.Datatypes <> nil constr
+R33439:33444 SLF.LibSepReference <> triple def
+R33464:33464 SLF.WPgen <> Q:69 var
+R33462:33462 SLF.WPgen <> H:68 var
+R33447:33453 SLF.LibSepReference <> trm_app constr
+R33458:33459 SLF.WPgen <> v2:65 var
+R33455:33456 SLF.WPgen <> v1:64 var
+R33599:33613 SLF.Rules ExamplePrograms <> mod
+prf 33824:33834 WpgenExec1 triple_incr
+R33848:33850 SLF.LibSepReference <> loc def
+binder 33846:33846 <> p:71
+R33856:33858 SLF.LibInt <> ::Int_scope:'int' not
+binder 33854:33854 <> n:72
+R33864:33869 SLF.LibSepReference <> triple def
+R33917:33922 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R33926:33926 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R33916:33916 SLF.WPgen <> p:71 var
+R33924:33924 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R33923:33923 SLF.WPgen <> n:72 var
+R33894:33898 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R33893:33893 SLF.WPgen <> p:71 var
+R33899:33899 SLF.WPgen <> n:72 var
+R33872:33878 SLF.LibSepReference <> trm_app constr
+R33885:33885 SLF.WPgen <> p:71 var
+R33880:33883 SLF.Rules ExamplePrograms incr def
+R33960:33984 SLF.WPgen WpgenExec1 triple_app_fun_from_wpgen defax
+R33960:33984 SLF.WPgen WpgenExec1 triple_app_fun_from_wpgen defax
+prf 35028:35039 WpgenExec1 wpgen_conseq
+binder 35050:35050 <> t:73
+binder 35052:35052 <> E:74
+binder 35054:35055 <> Q1:75
+binder 35057:35058 <> Q2:76
+R35073:35078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35065:35070 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R35063:35064 SLF.WPgen <> Q1:75 var
+R35071:35072 SLF.WPgen <> Q2:76 var
+R35091:35095 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R35079:35083 SLF.WPgen WpgenExec1 wpgen def
+R35089:35090 SLF.WPgen <> Q1:75 var
+R35087:35087 SLF.WPgen <> t:73 var
+R35085:35085 SLF.WPgen <> E:74 var
+R35096:35100 SLF.WPgen WpgenExec1 wpgen def
+R35106:35107 SLF.WPgen <> Q2:76 var
+R35104:35104 SLF.WPgen <> t:73 var
+R35102:35102 SLF.WPgen <> E:74 var
+prf 35417:35427 WpgenExec1 wpgen_frame
+binder 35438:35438 <> t:77
+binder 35440:35440 <> E:78
+binder 35442:35442 <> H:79
+binder 35444:35444 <> Q:80
+R35467:35471 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R35449:35449 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R35461:35465 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R35450:35454 SLF.WPgen WpgenExec1 wpgen def
+R35460:35460 SLF.WPgen <> Q:80 var
+R35458:35458 SLF.WPgen <> t:77 var
+R35456:35456 SLF.WPgen <> E:78 var
+R35466:35466 SLF.WPgen <> H:79 var
+R35472:35476 SLF.WPgen WpgenExec1 wpgen def
+R35484:35488 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R35483:35483 SLF.WPgen <> Q:80 var
+R35489:35489 SLF.WPgen <> H:79 var
+R35480:35480 SLF.WPgen <> t:77 var
+R35478:35478 SLF.WPgen <> E:78 var
+R35551:35560 SLF.WPgen WpgenExec1 <> mod
+def 37096:37102 <> formula
+R37114:37114 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37125:37127 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37118:37119 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37115:37117 SLF.LibSepReference <> val ind
+R37120:37124 SLF.LibSepReference SepSimplArgs hprop def
+R37128:37132 SLF.LibSepReference SepSimplArgs hprop def
+def 37836:37844 <> wpgen_seq
+R37853:37859 SLF.WPgen <> formula def
+binder 37847:37848 <> F1:81
+binder 37850:37851 <> F2:82
+R37864:37870 SLF.WPgen <> formula def
+binder 37879:37879 <> Q:83
+R37886:37887 SLF.WPgen <> F1:81 var
+binder 37894:37894 <> v:84
+R37899:37900 SLF.WPgen <> F2:82 var
+R37902:37902 SLF.WPgen <> Q:83 var
+R38381:38389 SLF.WPgen <> wpgen_seq def
+not 38358:38358 <> :::'Seq'_x_';'_x
+def 39380:39388 <> wpgen_val
+R39393:39395 SLF.LibSepReference <> val ind
+binder 39391:39391 <> v:85
+R39400:39406 SLF.WPgen <> formula def
+binder 39415:39415 <> Q:86
+R39422:39422 SLF.WPgen <> Q:86 var
+R39424:39424 SLF.WPgen <> v:85 var
+def 39439:39447 <> wpgen_let
+R39453:39459 SLF.WPgen <> formula def
+binder 39450:39451 <> F1:87
+R39471:39472 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39468:39470 SLF.LibSepReference <> val ind
+R39473:39479 SLF.WPgen <> formula def
+binder 39463:39466 <> F2of:88
+R39484:39490 SLF.WPgen <> formula def
+binder 39499:39499 <> Q:89
+R39506:39507 SLF.WPgen <> F1:87 var
+binder 39514:39514 <> v:90
+R39519:39522 SLF.WPgen <> F2of:88 var
+R39526:39526 SLF.WPgen <> Q:89 var
+R39524:39524 SLF.WPgen <> v:90 var
+def 39542:39549 <> wpgen_if
+R39554:39556 SLF.LibSepReference <> trm ind
+binder 39552:39552 <> t:91
+R39566:39572 SLF.WPgen <> formula def
+binder 39560:39561 <> F1:92
+binder 39563:39564 <> F2:93
+R39577:39583 SLF.WPgen <> formula def
+binder 39592:39592 <> Q:94
+R39599:39607 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R39614:39616 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R39610:39613 Coq.Init.Datatypes <> bool ind
+binder 39608:39608 <> b:95
+R39644:39648 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R39673:39673 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R39617:39618 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39643:39643 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39620:39622 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R39619:39619 SLF.WPgen <> t:91 var
+R39623:39629 SLF.LibSepReference <> trm_val constr
+R39632:39639 SLF.LibSepReference <> val_bool constr
+R39641:39641 SLF.WPgen <> b:95 var
+R39652:39652 SLF.WPgen <> b:95 var
+R39669:39670 SLF.WPgen <> F2:93 var
+R39672:39672 SLF.WPgen <> Q:94 var
+R39659:39660 SLF.WPgen <> F1:92 var
+R39662:39662 SLF.WPgen <> Q:94 var
+def 39688:39697 <> wpgen_fail
+R39701:39707 SLF.WPgen <> formula def
+binder 39716:39716 <> Q:96
+R39723:39724 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39730:39730 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39725:39729 Coq.Init.Logic <> False ind
+def 39745:39753 <> wpgen_var
+R39758:39760 SLF.WPgen <> ctx def
+binder 39756:39756 <> E:97
+R39766:39768 SLF.LibSepVar <> var def
+binder 39764:39764 <> x:98
+R39773:39779 SLF.WPgen <> formula def
+R39792:39797 SLF.WPgen <> lookup def
+R39801:39801 SLF.WPgen <> E:97 var
+R39799:39799 SLF.WPgen <> x:98 var
+R39812:39815 Coq.Init.Datatypes <> None constr
+R39820:39829 SLF.WPgen <> wpgen_fail def
+R39835:39838 Coq.Init.Datatypes <> Some constr
+R39845:39853 SLF.WPgen <> wpgen_val def
+def 39876:39884 <> wpgen_app
+R39889:39891 SLF.LibSepReference <> trm ind
+binder 39887:39887 <> t:99
+R39896:39902 SLF.WPgen <> formula def
+binder 39911:39911 <> Q:100
+R39918:39925 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R39927:39928 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+binder 39926:39926 <> H:101
+R39930:39933 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R39929:39929 SLF.WPgen <> H:101 var
+R39934:39935 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39948:39948 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R39936:39941 SLF.LibSepReference <> triple def
+R39947:39947 SLF.WPgen <> Q:100 var
+R39945:39945 SLF.WPgen <> H:101 var
+R39943:39943 SLF.WPgen <> t:99 var
+mod 40015:40024 <> WpgenExec2
+def 40037:40041 WpgenExec2 wpgen
+R40046:40048 SLF.WPgen <> ctx def
+binder 40044:40044 <> E:102
+R40054:40056 SLF.LibSepReference <> trm ind
+binder 40052:40052 <> t:103
+R40061:40067 SLF.WPgen <> formula def
+R40080:40080 SLF.WPgen <> t:103 var
+R40091:40097 SLF.LibSepReference <> trm_val constr
+R40104:40112 SLF.WPgen <> wpgen_val def
+R40120:40126 SLF.LibSepReference <> trm_var constr
+R40133:40141 SLF.WPgen <> wpgen_var def
+R40143:40143 SLF.WPgen <> E:102 var
+R40151:40157 SLF.LibSepReference <> trm_fun constr
+R40167:40175 SLF.WPgen <> wpgen_val def
+R40178:40184 SLF.LibSepReference <> val_fun constr
+R40189:40194 SLF.WPgen <> isubst def
+R40197:40199 SLF.WPgen <> rem def
+R40203:40203 SLF.WPgen <> E:102 var
+R40215:40221 SLF.LibSepReference <> trm_fix constr
+R40233:40241 SLF.WPgen <> wpgen_val def
+R40244:40250 SLF.LibSepReference <> val_fix constr
+R40257:40262 SLF.WPgen <> isubst def
+R40265:40267 SLF.WPgen <> rem def
+R40272:40274 SLF.WPgen <> rem def
+R40278:40278 SLF.WPgen <> E:102 var
+R40291:40297 SLF.LibSepReference <> trm_app constr
+R40308:40316 SLF.WPgen <> wpgen_app def
+R40319:40324 SLF.WPgen <> isubst def
+R40328:40328 SLF.WPgen <> t:103 var
+R40326:40326 SLF.WPgen <> E:102 var
+R40335:40341 SLF.LibSepReference <> trm_seq constr
+R40352:40360 SLF.WPgen <> wpgen_seq def
+R40376:40380 SLF.WPgen <> wpgen:104 def
+R40382:40382 SLF.WPgen <> E:102 var
+R40363:40367 SLF.WPgen <> wpgen:104 def
+R40369:40369 SLF.WPgen <> E:102 var
+R40392:40398 SLF.LibSepReference <> trm_let constr
+R40411:40419 SLF.WPgen <> wpgen_let def
+binder 40439:40439 <> v:106
+R40444:40448 SLF.WPgen <> wpgen:104 def
+R40456:40457 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R40451:40451 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R40453:40453 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R40455:40455 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R40454:40454 SLF.WPgen <> v:106 var
+R40458:40458 SLF.WPgen <> E:102 var
+R40422:40426 SLF.WPgen <> wpgen:104 def
+R40428:40428 SLF.WPgen <> E:102 var
+R40469:40474 SLF.LibSepReference <> trm_if constr
+R40488:40495 SLF.WPgen <> wpgen_if def
+R40525:40529 SLF.WPgen <> wpgen:104 def
+R40531:40531 SLF.WPgen <> E:102 var
+R40512:40516 SLF.WPgen <> wpgen:104 def
+R40518:40518 SLF.WPgen <> E:102 var
+R40498:40503 SLF.WPgen <> isubst def
+R40505:40505 SLF.WPgen <> E:102 var
+R40549:40558 SLF.WPgen WpgenExec2 <> mod
+R41007:41015 SLF.WPgen <> wpgen_val def
+not 40990:40990 <> ::wpgen_scope:'Val'_x
+R41095:41103 SLF.WPgen <> wpgen_let def
+binder 41113:41113 <> x:107
+not 41062:41062 <> ::wpgen_scope:'Let'_x_':='_x_'in'_x
+R41304:41311 SLF.WPgen <> wpgen_if def
+not 41267:41267 <> ::wpgen_scope:'If_'_x_'Then'_x_'Else'_x
+R41380:41389 SLF.WPgen <> wpgen_fail def
+not 41364:41364 <> ::wpgen_scope:'Fail'
+R41693:41701 SLF.WPgen <> wpgen_app def
+R41704:41710 SLF.LibSepReference <> trm_app constr
+not 41672:41672 <> ::wpgen_scope:'App'_x_x
+R41803:41811 SLF.WPgen <> wpgen_app def
+R41814:41820 SLF.LibSepReference <> trm_app constr
+R41823:41829 SLF.LibSepReference <> trm_app constr
+not 41779:41779 <> ::wpgen_scope:'App'_x_x_x
+mod 42019:42035 <> WPgenWithNotation
+R42045:42059 SLF.Rules ExamplePrograms <> mod
+R42061:42070 SLF.WPgen WpgenExec2 <> mod
+ax 42255:42279 WPgenWithNotation triple_app_fun_from_wpgen
+binder 42290:42291 <> v1:108
+binder 42293:42294 <> v2:109
+binder 42296:42296 <> x:110
+binder 42298:42299 <> t1:111
+binder 42301:42301 <> H:112
+binder 42303:42303 <> Q:113
+R42325:42330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42310:42312 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R42308:42309 SLF.WPgen <> v1:108 var
+R42313:42319 SLF.LibSepReference <> val_fun constr
+R42323:42324 SLF.WPgen <> t1:111 var
+R42321:42321 SLF.WPgen <> x:110 var
+R42361:42366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42332:42336 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R42331:42331 SLF.WPgen <> H:112 var
+R42337:42341 SLF.WPgen WpgenExec2 wpgen def
+R42360:42360 SLF.WPgen <> Q:113 var
+R42357:42358 SLF.WPgen <> t1:111 var
+R42350:42351 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R42344:42344 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R42346:42346 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R42349:42349 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R42345:42345 SLF.WPgen <> x:110 var
+R42347:42348 SLF.WPgen <> v2:109 var
+R42352:42354 Coq.Init.Datatypes <> nil constr
+R42367:42372 SLF.LibSepReference <> triple def
+R42392:42392 SLF.WPgen <> Q:113 var
+R42390:42390 SLF.WPgen <> H:112 var
+R42375:42381 SLF.LibSepReference <> trm_app constr
+R42386:42387 SLF.WPgen <> v2:109 var
+R42383:42384 SLF.WPgen <> v1:108 var
+prf 42448:42458 WPgenWithNotation triple_incr
+R42472:42474 SLF.LibSepReference <> loc def
+binder 42470:42470 <> p:115
+R42480:42482 SLF.LibInt <> ::Int_scope:'int' not
+binder 42478:42478 <> n:116
+R42488:42493 SLF.LibSepReference <> triple def
+R42541:42546 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R42550:42550 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R42540:42540 SLF.WPgen <> p:115 var
+R42548:42548 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R42547:42547 SLF.WPgen <> n:116 var
+R42518:42522 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R42517:42517 SLF.WPgen <> p:115 var
+R42523:42523 SLF.WPgen <> n:116 var
+R42496:42502 SLF.LibSepReference <> trm_app constr
+R42509:42509 SLF.WPgen <> p:115 var
+R42504:42507 SLF.Rules ExamplePrograms incr def
+R42584:42608 SLF.WPgen WPgenWithNotation triple_app_fun_from_wpgen defax
+R42584:42608 SLF.WPgen WPgenWithNotation triple_app_fun_from_wpgen defax
+R43329:43345 SLF.WPgen WPgenWithNotation <> mod
+mod 45063:45074 <> MkstructProp
+ax 45227:45234 MkstructProp mkstruct
+R45245:45246 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R45238:45244 SLF.WPgen <> formula def
+R45247:45253 SLF.WPgen <> formula def
+ax 45460:45473 MkstructProp mkstruct_frame
+R45487:45493 SLF.WPgen <> formula def
+binder 45485:45485 <> F:118
+binder 45496:45496 <> H:119
+binder 45498:45498 <> Q:120
+R45522:45526 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R45503:45503 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R45516:45520 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R45504:45511 SLF.WPgen MkstructProp mkstruct defax
+R45515:45515 SLF.WPgen <> Q:120 var
+R45513:45513 SLF.WPgen <> F:118 var
+R45521:45521 SLF.WPgen <> H:119 var
+R45527:45534 SLF.WPgen MkstructProp mkstruct defax
+R45540:45544 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R45539:45539 SLF.WPgen <> Q:120 var
+R45545:45545 SLF.WPgen <> H:119 var
+R45536:45536 SLF.WPgen <> F:118 var
+ax 45560:45574 MkstructProp mkstruct_conseq
+R45588:45594 SLF.WPgen <> formula def
+binder 45586:45586 <> F:122
+binder 45597:45598 <> Q1:123
+binder 45600:45601 <> Q2:124
+R45616:45621 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R45608:45613 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R45606:45607 SLF.WPgen <> Q1:123 var
+R45614:45615 SLF.WPgen <> Q2:124 var
+R45635:45639 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R45622:45629 SLF.WPgen MkstructProp mkstruct defax
+R45633:45634 SLF.WPgen <> Q1:123 var
+R45631:45631 SLF.WPgen <> F:122 var
+R45640:45647 SLF.WPgen MkstructProp mkstruct defax
+R45651:45652 SLF.WPgen <> Q2:124 var
+R45649:45649 SLF.WPgen <> F:122 var
+ax 45966:45979 MkstructProp mkstruct_erase
+R45993:45999 SLF.WPgen <> formula def
+binder 45991:45991 <> F:126
+binder 46002:46002 <> Q:127
+R46010:46014 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R46007:46007 SLF.WPgen <> F:126 var
+R46009:46009 SLF.WPgen <> Q:127 var
+R46015:46022 SLF.WPgen MkstructProp mkstruct defax
+R46026:46026 SLF.WPgen <> Q:127 var
+R46024:46024 SLF.WPgen <> F:126 var
+ax 46236:46252 MkstructProp mkstruct_monotone
+binder 46263:46264 <> F1:129
+binder 46266:46267 <> F2:130
+binder 46269:46269 <> Q:131
+R46274:46274 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R46298:46304 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 46282:46282 <> Q:132
+R46289:46293 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R46285:46286 SLF.WPgen <> F1:129 var
+R46288:46288 SLF.WPgen <> Q:132 var
+R46294:46295 SLF.WPgen <> F2:130 var
+R46297:46297 SLF.WPgen <> Q:132 var
+R46318:46322 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R46305:46312 SLF.WPgen MkstructProp mkstruct defax
+R46317:46317 SLF.WPgen <> Q:131 var
+R46314:46315 SLF.WPgen <> F1:129 var
+R46323:46330 SLF.WPgen MkstructProp mkstruct defax
+R46335:46335 SLF.WPgen <> Q:131 var
+R46332:46333 SLF.WPgen <> F2:130 var
+R46343:46354 SLF.WPgen MkstructProp <> mod
+def 46837:46844 <> mkstruct
+R46849:46855 SLF.WPgen <> formula def
+binder 46847:46847 <> F:134
+R46860:46866 SLF.WPgen <> formula def
+binder 46877:46877 <> Q:135
+R46882:46889 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R46892:46893 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+binder 46890:46891 <> Q1:136
+R46898:46902 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R46912:46912 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R46894:46894 SLF.WPgen <> F:134 var
+R46896:46897 SLF.WPgen <> Q1:136 var
+R46905:46910 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\--*'_x not
+R46903:46904 SLF.WPgen <> Q1:136 var
+R46911:46911 SLF.WPgen <> Q:135 var
+def 47662:47670 <> mkstruct'
+R47675:47681 SLF.WPgen <> formula def
+binder 47673:47673 <> F:137
+R47686:47692 SLF.WPgen <> formula def
+R47709:47710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47706:47708 SLF.LibSepReference <> val ind
+R47711:47715 SLF.LibSepReference SepSimplArgs hprop def
+binder 47704:47704 <> Q:138
+R47721:47728 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+R47733:47734 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\exists'_x_'..'_x_','_x not
+binder 47729:47730 <> Q1:139
+binder 47732:47732 <> H:140
+R47739:47742 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R47735:47735 SLF.WPgen <> F:137 var
+R47737:47738 SLF.WPgen <> Q1:139 var
+R47744:47747 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R47743:47743 SLF.WPgen <> H:140 var
+R47748:47749 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R47765:47765 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R47758:47763 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R47752:47756 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R47750:47751 SLF.WPgen <> Q1:139 var
+R47757:47757 SLF.WPgen <> H:140 var
+R47764:47764 SLF.WPgen <> Q:138 var
+prf 47841:47854 <> mkstruct_frame
+binder 47865:47865 <> F:141
+binder 47867:47867 <> H:142
+binder 47869:47869 <> Q:143
+R47893:47897 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R47874:47874 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R47887:47891 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R47875:47882 SLF.WPgen <> mkstruct def
+R47886:47886 SLF.WPgen <> Q:143 var
+R47884:47884 SLF.WPgen <> F:141 var
+R47892:47892 SLF.WPgen <> H:142 var
+R47898:47905 SLF.WPgen <> mkstruct def
+R47911:47915 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R47910:47910 SLF.WPgen <> Q:143 var
+R47916:47916 SLF.WPgen <> H:142 var
+R47907:47907 SLF.WPgen <> F:141 var
+R47948:47955 SLF.WPgen <> mkstruct def
+prf 47997:48011 <> mkstruct_conseq
+binder 48022:48022 <> F:144
+binder 48024:48025 <> Q1:145
+binder 48027:48028 <> Q2:146
+R48043:48048 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R48035:48040 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R48033:48034 SLF.WPgen <> Q1:145 var
+R48041:48042 SLF.WPgen <> Q2:146 var
+R48062:48066 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R48049:48056 SLF.WPgen <> mkstruct def
+R48060:48061 SLF.WPgen <> Q1:145 var
+R48058:48058 SLF.WPgen <> F:144 var
+R48067:48074 SLF.WPgen <> mkstruct def
+R48078:48079 SLF.WPgen <> Q2:146 var
+R48076:48076 SLF.WPgen <> F:144 var
+R48113:48120 SLF.WPgen <> mkstruct def
+prf 48162:48175 <> mkstruct_erase
+binder 48186:48186 <> F:147
+binder 48188:48188 <> Q:148
+R48196:48200 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R48193:48193 SLF.WPgen <> F:147 var
+R48195:48195 SLF.WPgen <> Q:148 var
+R48201:48208 SLF.WPgen <> mkstruct def
+R48212:48212 SLF.WPgen <> Q:148 var
+R48210:48210 SLF.WPgen <> F:147 var
+R48243:48250 SLF.WPgen <> mkstruct def
+prf 48273:48289 <> mkstruct_monotone
+binder 48300:48301 <> F1:149
+binder 48303:48304 <> F2:150
+binder 48306:48306 <> Q:151
+R48311:48311 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R48335:48341 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 48319:48319 <> Q:152
+R48326:48330 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R48322:48323 SLF.WPgen <> F1:149 var
+R48325:48325 SLF.WPgen <> Q:152 var
+R48331:48332 SLF.WPgen <> F2:150 var
+R48334:48334 SLF.WPgen <> Q:152 var
+R48355:48359 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R48342:48349 SLF.WPgen <> mkstruct def
+R48354:48354 SLF.WPgen <> Q:151 var
+R48351:48352 SLF.WPgen <> F1:149 var
+R48360:48367 SLF.WPgen <> mkstruct def
+R48372:48372 SLF.WPgen <> Q:151 var
+R48369:48370 SLF.WPgen <> F2:150 var
+R48407:48414 SLF.WPgen <> mkstruct def
+R48407:48414 SLF.WPgen <> mkstruct def
+def 48738:48742 <> wpgen
+R48747:48749 SLF.WPgen <> ctx def
+binder 48745:48745 <> E:153
+R48755:48757 SLF.LibSepReference <> trm ind
+binder 48753:48753 <> t:154
+R48762:48768 SLF.WPgen <> formula def
+R48775:48782 SLF.WPgen <> mkstruct def
+R48791:48791 SLF.WPgen <> t:154 var
+R48802:48808 SLF.LibSepReference <> trm_val constr
+R48815:48823 SLF.WPgen <> wpgen_val def
+R48831:48837 SLF.LibSepReference <> trm_var constr
+R48844:48852 SLF.WPgen <> wpgen_var def
+R48854:48854 SLF.WPgen <> E:153 var
+R48862:48868 SLF.LibSepReference <> trm_fun constr
+R48878:48886 SLF.WPgen <> wpgen_val def
+R48889:48895 SLF.LibSepReference <> val_fun constr
+R48900:48905 SLF.WPgen <> isubst def
+R48908:48910 SLF.WPgen <> rem def
+R48914:48914 SLF.WPgen <> E:153 var
+R48926:48932 SLF.LibSepReference <> trm_fix constr
+R48944:48952 SLF.WPgen <> wpgen_val def
+R48955:48961 SLF.LibSepReference <> val_fix constr
+R48968:48973 SLF.WPgen <> isubst def
+R48976:48978 SLF.WPgen <> rem def
+R48983:48985 SLF.WPgen <> rem def
+R48989:48989 SLF.WPgen <> E:153 var
+R49002:49008 SLF.LibSepReference <> trm_app constr
+R49019:49027 SLF.WPgen <> wpgen_app def
+R49030:49035 SLF.WPgen <> isubst def
+R49039:49039 SLF.WPgen <> t:154 var
+R49037:49037 SLF.WPgen <> E:153 var
+R49046:49052 SLF.LibSepReference <> trm_seq constr
+R49063:49071 SLF.WPgen <> wpgen_seq def
+R49087:49091 SLF.WPgen <> wpgen:155 def
+R49093:49093 SLF.WPgen <> E:153 var
+R49074:49078 SLF.WPgen <> wpgen:155 def
+R49080:49080 SLF.WPgen <> E:153 var
+R49103:49109 SLF.LibSepReference <> trm_let constr
+R49122:49130 SLF.WPgen <> wpgen_let def
+binder 49150:49150 <> v:157
+R49155:49159 SLF.WPgen <> wpgen:155 def
+R49167:49168 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R49162:49162 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49164:49164 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49166:49166 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49165:49165 SLF.WPgen <> v:157 var
+R49169:49169 SLF.WPgen <> E:153 var
+R49133:49137 SLF.WPgen <> wpgen:155 def
+R49139:49139 SLF.WPgen <> E:153 var
+R49180:49185 SLF.LibSepReference <> trm_if constr
+R49199:49206 SLF.WPgen <> wpgen_if def
+R49236:49240 SLF.WPgen <> wpgen:155 def
+R49242:49242 SLF.WPgen <> E:153 var
+R49223:49227 SLF.WPgen <> wpgen:155 def
+R49229:49229 SLF.WPgen <> E:153 var
+R49209:49214 SLF.WPgen <> isubst def
+R49216:49216 SLF.WPgen <> E:153 var
+R49443:49450 SLF.WPgen <> mkstruct def
+not 49433:49433 <> ::wpgen_scope:'`'_x
+ax 49656:49680 <> triple_app_fun_from_wpgen
+binder 49691:49692 <> v1:158
+binder 49694:49695 <> v2:159
+binder 49697:49697 <> x:160
+binder 49699:49700 <> t1:161
+binder 49702:49702 <> H:162
+binder 49704:49704 <> Q:163
+R49726:49731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R49711:49713 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49709:49710 SLF.WPgen <> v1:158 var
+R49714:49720 SLF.LibSepReference <> val_fun constr
+R49724:49725 SLF.WPgen <> t1:161 var
+R49722:49722 SLF.WPgen <> x:160 var
+R49762:49767 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R49733:49737 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R49732:49732 SLF.WPgen <> H:162 var
+R49738:49742 SLF.WPgen <> wpgen def
+R49761:49761 SLF.WPgen <> Q:163 var
+R49758:49759 SLF.WPgen <> t1:161 var
+R49751:49752 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R49745:49745 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49747:49747 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49750:49750 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R49746:49746 SLF.WPgen <> x:160 var
+R49748:49749 SLF.WPgen <> v2:159 var
+R49753:49755 Coq.Init.Datatypes <> nil constr
+R49768:49773 SLF.LibSepReference <> triple def
+R49793:49793 SLF.WPgen <> Q:163 var
+R49791:49791 SLF.WPgen <> H:162 var
+R49776:49782 SLF.LibSepReference <> trm_app constr
+R49787:49788 SLF.WPgen <> v2:159 var
+R49784:49785 SLF.WPgen <> v1:158 var
+prf 50423:50435 <> xstruct_lemma
+binder 50446:50446 <> F:165
+binder 50448:50448 <> H:166
+binder 50450:50450 <> Q:167
+R50464:50469 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R50456:50460 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50455:50455 SLF.WPgen <> H:166 var
+R50461:50461 SLF.WPgen <> F:165 var
+R50463:50463 SLF.WPgen <> Q:167 var
+R50471:50475 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50470:50470 SLF.WPgen <> H:166 var
+R50476:50483 SLF.WPgen <> mkstruct def
+R50487:50487 SLF.WPgen <> Q:167 var
+R50485:50485 SLF.WPgen <> F:165 var
+R50531:50544 SLF.WPgen <> mkstruct_erase thm
+R50531:50544 SLF.WPgen <> mkstruct_erase thm
+prf 50660:50669 <> xval_lemma
+binder 50680:50680 <> v:168
+binder 50682:50682 <> H:169
+binder 50684:50684 <> Q:170
+R50698:50703 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R50690:50694 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50689:50689 SLF.WPgen <> H:169 var
+R50695:50695 SLF.WPgen <> Q:170 var
+R50697:50697 SLF.WPgen <> v:168 var
+R50705:50709 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50704:50704 SLF.WPgen <> H:169 var
+R50710:50718 SLF.WPgen <> wpgen_val def
+R50722:50722 SLF.WPgen <> Q:170 var
+R50720:50720 SLF.WPgen <> v:168 var
+prf 50871:50880 <> xlet_lemma
+binder 50891:50891 <> H:171
+binder 50893:50894 <> F1:172
+binder 50896:50899 <> F2of:173
+binder 50901:50901 <> Q:174
+R50934:50939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R50907:50911 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50906:50906 SLF.WPgen <> H:171 var
+R50912:50913 SLF.WPgen <> F1:172 var
+binder 50920:50920 <> v:175
+R50925:50928 SLF.WPgen <> F2of:173 var
+R50930:50930 SLF.WPgen <> v:175 var
+R50932:50932 SLF.WPgen <> Q:174 var
+R50941:50945 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R50940:50940 SLF.WPgen <> H:171 var
+R50946:50954 SLF.WPgen <> wpgen_let def
+R50964:50964 SLF.WPgen <> Q:174 var
+R50959:50962 SLF.WPgen <> F2of:173 var
+R50956:50957 SLF.WPgen <> F1:172 var
+prf 51070:51079 <> xseq_lemma
+binder 51090:51090 <> H:176
+binder 51092:51093 <> F1:177
+binder 51095:51096 <> F2:178
+binder 51098:51098 <> Q:179
+R51127:51132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51104:51108 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R51103:51103 SLF.WPgen <> H:176 var
+R51109:51110 SLF.WPgen <> F1:177 var
+binder 51117:51117 <> v:180
+R51122:51123 SLF.WPgen <> F2:178 var
+R51125:51125 SLF.WPgen <> Q:179 var
+R51134:51138 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R51133:51133 SLF.WPgen <> H:176 var
+R51139:51147 SLF.WPgen <> wpgen_seq def
+R51155:51155 SLF.WPgen <> Q:179 var
+R51152:51153 SLF.WPgen <> F2:178 var
+R51149:51150 SLF.WPgen <> F1:177 var
+prf 51538:51547 <> xapp_lemma
+binder 51558:51558 <> t:181
+binder 51560:51561 <> Q1:182
+binder 51563:51564 <> H1:183
+binder 51566:51567 <> H2:184
+binder 51569:51569 <> H:185
+binder 51571:51571 <> Q:186
+R51590:51595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51576:51581 SLF.LibSepReference <> triple def
+R51588:51589 SLF.WPgen <> Q1:182 var
+R51585:51586 SLF.WPgen <> H1:183 var
+R51583:51583 SLF.WPgen <> t:181 var
+R51610:51615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51597:51601 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R51596:51596 SLF.WPgen <> H:185 var
+R51604:51607 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R51602:51603 SLF.WPgen <> H1:183 var
+R51608:51609 SLF.WPgen <> H2:184 var
+R51632:51637 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51625:51630 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R51618:51622 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R51616:51617 SLF.WPgen <> Q1:182 var
+R51623:51624 SLF.WPgen <> H2:184 var
+R51631:51631 SLF.WPgen <> Q:186 var
+R51639:51643 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R51638:51638 SLF.WPgen <> H:185 var
+R51644:51652 SLF.WPgen <> wpgen_app def
+R51656:51656 SLF.WPgen <> Q:186 var
+R51654:51654 SLF.WPgen <> t:181 var
+R51697:51705 SLF.WPgen <> wpgen_app def
+R51724:51742 SLF.WPsem <> triple_conseq_frame defax
+R51724:51742 SLF.WPsem <> triple_conseq_frame defax
+prf 51897:51905 <> xwp_lemma
+binder 51916:51917 <> v1:187
+binder 51919:51920 <> v2:188
+binder 51922:51922 <> x:189
+binder 51924:51925 <> t1:190
+binder 51927:51927 <> H:191
+binder 51929:51929 <> Q:192
+R51951:51956 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51936:51938 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R51934:51935 SLF.WPgen <> v1:187 var
+R51939:51945 SLF.LibSepReference <> val_fun constr
+R51949:51950 SLF.WPgen <> t1:190 var
+R51947:51947 SLF.WPgen <> x:189 var
+R51987:51992 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51958:51962 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R51957:51957 SLF.WPgen <> H:191 var
+R51963:51967 SLF.WPgen <> wpgen def
+R51986:51986 SLF.WPgen <> Q:192 var
+R51983:51984 SLF.WPgen <> t1:190 var
+R51976:51977 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R51970:51970 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51972:51972 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51975:51975 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R51971:51971 SLF.WPgen <> x:189 var
+R51973:51974 SLF.WPgen <> v2:188 var
+R51978:51980 Coq.Init.Datatypes <> nil constr
+R51993:51998 SLF.LibSepReference <> triple def
+R52018:52018 SLF.WPgen <> Q:192 var
+R52016:52016 SLF.WPgen <> H:191 var
+R52001:52007 SLF.LibSepReference <> trm_app constr
+R52012:52013 SLF.WPgen <> v2:188 var
+R52009:52010 SLF.WPgen <> v1:187 var
+R52056:52080 SLF.WPgen <> triple_app_fun_from_wpgen defax
+R52056:52080 SLF.WPgen <> triple_app_fun_from_wpgen defax
+mod 52299:52315 <> ProofsWithXlemmas
+R52325:52339 SLF.Rules ExamplePrograms <> mod
+prf 52373:52383 ProofsWithXlemmas triple_incr
+R52397:52399 SLF.LibSepReference <> loc def
+binder 52395:52395 <> p:193
+R52405:52407 SLF.LibInt <> ::Int_scope:'int' not
+binder 52403:52403 <> n:194
+R52413:52418 SLF.LibSepReference <> triple def
+R52466:52471 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R52475:52475 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R52465:52465 SLF.WPgen <> p:193 var
+R52473:52473 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R52472:52472 SLF.WPgen <> n:194 var
+R52443:52447 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R52442:52442 SLF.WPgen <> p:193 var
+R52448:52448 SLF.WPgen <> n:194 var
+R52421:52427 SLF.LibSepReference <> trm_app constr
+R52434:52434 SLF.WPgen <> p:193 var
+R52429:52432 SLF.Rules ExamplePrograms incr def
+R52511:52519 SLF.WPgen <> xwp_lemma thm
+R52511:52519 SLF.WPgen <> xwp_lemma thm
+R52709:52721 SLF.WPgen <> xstruct_lemma thm
+R52709:52721 SLF.WPgen <> xstruct_lemma thm
+R52733:52742 SLF.WPgen <> xlet_lemma thm
+R52733:52742 SLF.WPgen <> xlet_lemma thm
+R52754:52766 SLF.WPgen <> xstruct_lemma thm
+R52754:52766 SLF.WPgen <> xstruct_lemma thm
+R52778:52787 SLF.WPgen <> xapp_lemma thm
+R52778:52787 SLF.WPgen <> xapp_lemma thm
+R52798:52807 SLF.Rules <> triple_get thm
+R52798:52807 SLF.Rules <> triple_get thm
+R52855:52867 SLF.WPgen <> xstruct_lemma thm
+R52855:52867 SLF.WPgen <> xstruct_lemma thm
+R52879:52888 SLF.WPgen <> xlet_lemma thm
+R52879:52888 SLF.WPgen <> xlet_lemma thm
+R52900:52912 SLF.WPgen <> xstruct_lemma thm
+R52900:52912 SLF.WPgen <> xstruct_lemma thm
+R52924:52933 SLF.WPgen <> xapp_lemma thm
+R52924:52933 SLF.WPgen <> xapp_lemma thm
+R52944:52953 SLF.Rules <> triple_add thm
+R52944:52953 SLF.Rules <> triple_add thm
+R53001:53013 SLF.WPgen <> xstruct_lemma thm
+R53001:53013 SLF.WPgen <> xstruct_lemma thm
+R53025:53034 SLF.WPgen <> xapp_lemma thm
+R53025:53034 SLF.WPgen <> xapp_lemma thm
+R53045:53054 SLF.Rules <> triple_set prfax
+R53045:53054 SLF.Rules <> triple_set prfax
+prf 53320:53354 ProofsWithXlemmas triple_succ_using_incr_with_xlemmas
+R53368:53370 SLF.LibInt <> ::Int_scope:'int' not
+binder 53366:53366 <> n:195
+R53376:53381 SLF.LibSepReference <> triple def
+binder 53428:53428 <> v:196
+R53433:53434 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R53442:53442 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R53436:53438 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R53435:53435 SLF.WPgen <> v:196 var
+R53440:53440 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R53439:53439 SLF.WPgen <> n:195 var
+R53415:53417 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\[]' not
+R53384:53390 SLF.LibSepReference <> trm_app constr
+R53408:53408 SLF.WPgen <> n:195 var
+R53392:53406 SLF.Rules ExamplePrograms succ_using_incr def
+R53504:53520 SLF.WPgen ProofsWithXlemmas <> mod
+R53904:53916 SLF.WPgen <> xstruct_lemma thm
+R54134:54138 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R54139:54146 SLF.WPgen <> mkstruct def
+R54134:54138 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R54139:54146 SLF.WPgen <> mkstruct def
+R54225:54234 SLF.WPgen <> xval_lemma thm
+R54292:54301 SLF.WPgen <> xlet_lemma thm
+R54359:54368 SLF.WPgen <> xseq_lemma thm
+R54666:54670 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R54671:54678 SLF.WPgen <> mkstruct def
+R54666:54670 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R54671:54678 SLF.WPgen <> mkstruct def
+R54708:54716 SLF.WPgen <> wpgen_seq def
+R54708:54716 SLF.WPgen <> wpgen_seq def
+R54738:54746 SLF.WPgen <> wpgen_let def
+R54738:54746 SLF.WPgen <> wpgen_let def
+R54873:54882 SLF.WPgen <> xapp_lemma thm
+R55159:55167 SLF.WPgen <> xwp_lemma thm
+R55228:55236 SLF.WPgen <> wpgen_var def
+mod 55413:55430 <> ProofsWithXtactics
+R55440:55454 SLF.Rules ExamplePrograms <> mod
+prf 55488:55498 ProofsWithXtactics triple_incr
+R55512:55514 SLF.LibSepReference <> loc def
+binder 55510:55510 <> p:197
+R55520:55522 SLF.LibInt <> ::Int_scope:'int' not
+binder 55518:55518 <> n:198
+R55528:55533 SLF.LibSepReference <> triple def
+R55581:55586 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R55590:55590 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R55580:55580 SLF.WPgen <> p:197 var
+R55588:55588 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R55587:55587 SLF.WPgen <> n:198 var
+R55558:55562 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R55557:55557 SLF.WPgen <> p:197 var
+R55563:55563 SLF.WPgen <> n:198 var
+R55536:55542 SLF.LibSepReference <> trm_app constr
+R55549:55549 SLF.WPgen <> p:197 var
+R55544:55547 SLF.Rules ExamplePrograms incr def
+R55629:55638 SLF.Rules <> triple_get thm
+R55629:55638 SLF.Rules <> triple_get thm
+R55669:55678 SLF.Rules <> triple_add thm
+R55669:55678 SLF.Rules <> triple_add thm
+R55709:55718 SLF.Rules <> triple_set prfax
+R55709:55718 SLF.Rules <> triple_set prfax
+prf 55889:55924 ProofsWithXtactics triple_succ_using_incr_with_xtactics
+R55938:55940 SLF.LibInt <> ::Int_scope:'int' not
+binder 55936:55936 <> n:199
+R55946:55951 SLF.LibSepReference <> triple def
+binder 55998:55998 <> v:200
+R56003:56004 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R56012:56012 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R56006:56008 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56005:56005 SLF.WPgen <> v:200 var
+R56010:56010 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R56009:56009 SLF.WPgen <> n:199 var
+R55985:55987 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\[]' not
+R55954:55960 SLF.LibSepReference <> trm_app constr
+R55978:55978 SLF.WPgen <> n:199 var
+R55962:55976 SLF.Rules ExamplePrograms succ_using_incr def
+R56074:56091 SLF.WPgen ProofsWithXtactics <> mod
+R56990:56992 SLF.LibSepReference <> val ind
+binder 56988:56988 <> r:201
+R56996:56996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57002:57006 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R56998:57000 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56997:56997 SLF.WPgen <> r:201 var
+R56990:56992 SLF.LibSepReference <> val ind
+binder 56988:56988 <> r:202
+R56996:56996 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57002:57006 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R56998:57000 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56997:56997 SLF.WPgen <> r:202 var
+R57041:57043 SLF.LibSepReference <> val ind
+binder 57039:57039 <> r:203
+binder 57054:57054 <> x:204
+R57057:57057 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57063:57067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57059:57061 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R57058:57058 SLF.WPgen <> r:203 var
+R57041:57043 SLF.LibSepReference <> val ind
+binder 57039:57039 <> r:205
+binder 57054:57054 <> x:206
+R57057:57057 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57063:57067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R57059:57061 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R57058:57058 SLF.WPgen <> r:205 var
+R58699:58708 SLF.WPgen <> xapp_lemma thm
+mod 58949:58974 <> ProofsWithAdvancedXtactics
+R58984:58998 SLF.Rules ExamplePrograms <> mod
+prf 59233:59243 ProofsWithAdvancedXtactics triple_incr
+R59257:59259 SLF.LibSepReference <> loc def
+binder 59255:59255 <> p:207
+R59265:59267 SLF.LibInt <> ::Int_scope:'int' not
+binder 59263:59263 <> n:208
+R59273:59278 SLF.LibSepReference <> triple def
+R59326:59331 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R59335:59335 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R59325:59325 SLF.WPgen <> p:207 var
+R59333:59333 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R59332:59332 SLF.WPgen <> n:208 var
+R59303:59307 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R59302:59302 SLF.WPgen <> p:207 var
+R59308:59308 SLF.WPgen <> n:208 var
+R59281:59287 SLF.LibSepReference <> trm_app constr
+R59294:59294 SLF.WPgen <> p:207 var
+R59289:59292 SLF.Rules ExamplePrograms incr def
+R59618:59643 SLF.WPgen ProofsWithAdvancedXtactics <> mod
+mod 59769:59788 <> ExampleLocalFunWpgen
+R59798:59809 SLF.LibSepReference DemoPrograms <> mod
+R59811:59820 SLF.WPgen WpgenExec2 <> mod
+def 60167:60175 ExampleLocalFunWpgen incrtwice
+R60179:60181 SLF.LibSepReference <> val ind
+R60188:60190 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R60267:60269 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R60191:60194 SLF.LibSepReference <> :trm:val_scope:'fun'_x_'=>'_x not
+R60197:60207 SLF.LibSepReference <> :trm:val_scope:'fun'_x_'=>'_x not
+R60195:60196 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''p' not
+R60208:60211 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R60214:60216 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R60237:60247 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R60212:60213 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R60217:60217 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R60236:60236 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R60218:60222 SLF.LibSepReference <> :trm:trm_scope:'fun_'_x_'..'_x_'=>'_x not
+R60225:60228 SLF.LibSepReference <> :trm:trm_scope:'fun_'_x_'..'_x_'=>'_x not
+R60223:60224 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''u' not
+R60233:60233 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R60229:60232 SLF.LibSepReference DemoPrograms incr def
+R60234:60235 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''p' not
+R60253:60261 SLF.LibSepReference <> :trm:trm_scope:x_';'_x not
+R60250:60250 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R60248:60249 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R60251:60252 SLF.LibSepReference <> :trm:trm_scope:'()' not
+R60264:60264 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R60262:60263 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R60265:60266 SLF.LibSepReference <> :trm:trm_scope:'()' not
+prf 61569:61595 ExampleLocalFunWpgen triple_incrtwice_using_xval
+R61609:61611 SLF.LibSepReference <> loc def
+binder 61607:61607 <> p:209
+R61617:61619 SLF.LibInt <> ::Int_scope:'int' not
+binder 61615:61615 <> n:210
+R61625:61630 SLF.LibSepReference <> triple def
+R61675:61680 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R61684:61684 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R61674:61674 SLF.WPgen <> p:209 var
+R61682:61682 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R61681:61681 SLF.WPgen <> n:210 var
+R61652:61656 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R61651:61651 SLF.WPgen <> p:209 var
+R61657:61657 SLF.WPgen <> n:210 var
+R61633:61641 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R61643:61643 SLF.WPgen <> p:209 var
+prf 63080:63092 ExampleLocalFunWpgen xletval_lemma
+binder 63103:63103 <> H:211
+binder 63105:63106 <> v1:212
+binder 63108:63111 <> F2of:213
+binder 63113:63113 <> Q:214
+R63118:63118 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R63153:63159 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 63126:63126 <> x:215
+R63135:63138 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R63130:63132 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R63129:63129 SLF.WPgen <> x:215 var
+R63133:63134 SLF.WPgen <> v1:212 var
+R63140:63144 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R63139:63139 SLF.WPgen <> H:211 var
+R63145:63148 SLF.WPgen <> F2of:213 var
+R63150:63150 SLF.WPgen <> x:215 var
+R63152:63152 SLF.WPgen <> Q:214 var
+R63161:63165 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R63160:63160 SLF.WPgen <> H:211 var
+R63166:63174 SLF.WPgen <> wpgen_let def
+R63207:63207 SLF.WPgen <> Q:214 var
+R63202:63205 SLF.WPgen <> F2of:213 var
+R63177:63184 SLF.WPgen <> mkstruct def
+R63187:63195 SLF.WPgen <> wpgen_val def
+R63197:63198 SLF.WPgen <> v1:212 var
+R63242:63251 SLF.WPgen <> xlet_lemma thm
+R63242:63251 SLF.WPgen <> xlet_lemma thm
+R63260:63272 SLF.WPgen <> xstruct_lemma thm
+R63260:63272 SLF.WPgen <> xstruct_lemma thm
+R63283:63292 SLF.WPgen <> xval_lemma thm
+R63283:63292 SLF.WPgen <> xval_lemma thm
+R63369:63381 SLF.WPgen ExampleLocalFunWpgen xletval_lemma thm
+prf 63391:63420 ExampleLocalFunWpgen triple_incrtwice_using_xletval
+R63434:63436 SLF.LibSepReference <> loc def
+binder 63432:63432 <> p:216
+R63442:63444 SLF.LibInt <> ::Int_scope:'int' not
+binder 63440:63440 <> n:217
+R63450:63455 SLF.LibSepReference <> triple def
+R63500:63505 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R63509:63509 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R63499:63499 SLF.WPgen <> p:216 var
+R63507:63507 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R63506:63506 SLF.WPgen <> n:217 var
+R63477:63481 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R63476:63476 SLF.WPgen <> p:216 var
+R63482:63482 SLF.WPgen <> n:217 var
+R63458:63466 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R63468:63468 SLF.WPgen <> p:216 var
+R64246:64254 SLF.WPgen <> wpgen_app def
+prf 65244:65256 ExampleLocalFunWpgen xappfun_lemma
+binder 65267:65267 <> t:218
+binder 65269:65269 <> H:219
+binder 65271:65271 <> Q:220
+R65288:65293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R65276:65281 SLF.LibSepReference <> triple def
+R65287:65287 SLF.WPgen <> Q:220 var
+R65285:65285 SLF.WPgen <> H:219 var
+R65283:65283 SLF.WPgen <> t:218 var
+R65295:65299 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R65294:65294 SLF.WPgen <> H:219 var
+R65300:65308 SLF.WPgen <> wpgen_app def
+R65312:65312 SLF.WPgen <> Q:220 var
+R65310:65310 SLF.WPgen <> t:218 var
+R65345:65353 SLF.WPgen <> wpgen_app def
+R65449:65461 SLF.WPgen ExampleLocalFunWpgen xappfun_lemma thm
+prf 65551:65592 ExampleLocalFunWpgen triple_incrtwice_using_xletva_and_xapp_fun
+R65606:65608 SLF.LibSepReference <> loc def
+binder 65604:65604 <> p:221
+R65614:65616 SLF.LibInt <> ::Int_scope:'int' not
+binder 65612:65612 <> n:222
+R65622:65627 SLF.LibSepReference <> triple def
+R65672:65677 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R65681:65681 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R65671:65671 SLF.WPgen <> p:221 var
+R65679:65679 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R65678:65678 SLF.WPgen <> n:222 var
+R65649:65653 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R65648:65648 SLF.WPgen <> p:221 var
+R65654:65654 SLF.WPgen <> n:222 var
+R65630:65638 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R65640:65640 SLF.WPgen <> p:221 var
+prf 66757:66784 ExampleLocalFunWpgen triple_incrtwice_with_assert
+R66798:66800 SLF.LibSepReference <> loc def
+binder 66796:66796 <> p:223
+R66806:66808 SLF.LibInt <> ::Int_scope:'int' not
+binder 66804:66804 <> n:224
+R66814:66819 SLF.LibSepReference <> triple def
+R66864:66869 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R66873:66873 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R66863:66863 SLF.WPgen <> p:223 var
+R66871:66871 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R66870:66870 SLF.WPgen <> n:224 var
+R66841:66845 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R66840:66840 SLF.WPgen <> p:223 var
+R66846:66846 SLF.WPgen <> n:224 var
+R66822:66830 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R66832:66832 SLF.WPgen <> p:223 var
+R67080:67082 SLF.LibInt <> ::Int_scope:'int' not
+binder 67078:67078 <> m:225
+R67090:67095 SLF.LibSepReference <> triple def
+R67129:67134 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67138:67138 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67136:67136 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R67135:67135 SLF.WPgen <> m:225 var
+R67110:67114 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67115:67115 SLF.WPgen <> m:225 var
+R67097:67099 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R67104:67106 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R67101:67101 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R67102:67103 SLF.LibSepReference <> :trm:trm_scope:'()' not
+R67080:67082 SLF.LibInt <> ::Int_scope:'int' not
+binder 67078:67078 <> m:226
+R67090:67095 SLF.LibSepReference <> triple def
+R67129:67134 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67138:67138 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67136:67136 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R67135:67135 SLF.WPgen <> m:226 var
+R67110:67114 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R67115:67115 SLF.WPgen <> m:226 var
+R67097:67099 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R67104:67106 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R67101:67101 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R67102:67103 SLF.LibSepReference <> :trm:trm_scope:'()' not
+prf 68211:68220 ExampleLocalFunWpgen xfun_lemma
+R68239:68240 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R68236:68238 SLF.LibSepReference <> val ind
+binder 68232:68234 <> Sof:227
+binder 68247:68247 <> H:228
+binder 68249:68250 <> v1:229
+binder 68252:68255 <> F2of:230
+binder 68257:68257 <> Q:231
+R68268:68273 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R68262:68264 SLF.WPgen <> Sof:227 var
+R68266:68267 SLF.WPgen <> v1:229 var
+R68274:68274 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R68308:68314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 68282:68282 <> x:232
+R68290:68293 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R68285:68287 SLF.WPgen <> Sof:227 var
+R68289:68289 SLF.WPgen <> x:232 var
+R68295:68299 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R68294:68294 SLF.WPgen <> H:228 var
+R68300:68303 SLF.WPgen <> F2of:230 var
+R68305:68305 SLF.WPgen <> x:232 var
+R68307:68307 SLF.WPgen <> Q:231 var
+R68316:68320 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R68315:68315 SLF.WPgen <> H:228 var
+R68321:68329 SLF.WPgen <> wpgen_let def
+R68362:68362 SLF.WPgen <> Q:231 var
+R68357:68360 SLF.WPgen <> F2of:230 var
+R68332:68339 SLF.WPgen <> mkstruct def
+R68342:68350 SLF.WPgen <> wpgen_val def
+R68352:68353 SLF.WPgen <> v1:229 var
+R68398:68410 SLF.WPgen ExampleLocalFunWpgen xletval_lemma thm
+R68398:68410 SLF.WPgen ExampleLocalFunWpgen xletval_lemma thm
+R68550:68559 SLF.WPgen ExampleLocalFunWpgen xfun_lemma thm
+prf 68654:68679 ExampleLocalFunWpgen triple_incrtwice_with_xfun
+R68693:68695 SLF.LibSepReference <> loc def
+binder 68691:68691 <> p:233
+R68701:68703 SLF.LibInt <> ::Int_scope:'int' not
+binder 68699:68699 <> n:234
+R68709:68714 SLF.LibSepReference <> triple def
+R68759:68764 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68768:68768 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68758:68758 SLF.WPgen <> p:233 var
+R68766:68766 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R68765:68765 SLF.WPgen <> n:234 var
+R68736:68740 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68735:68735 SLF.WPgen <> p:233 var
+R68741:68741 SLF.WPgen <> n:234 var
+R68717:68725 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R68727:68727 SLF.WPgen <> p:233 var
+R68918:68920 SLF.LibSepReference <> val ind
+binder 68916:68916 <> f:235
+R68936:68938 SLF.LibInt <> ::Int_scope:'int' not
+binder 68934:68934 <> m:236
+R68946:68951 SLF.LibSepReference <> triple def
+R68985:68990 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68994:68994 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68992:68992 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R68991:68991 SLF.WPgen <> m:236 var
+R68966:68970 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68971:68971 SLF.WPgen <> m:236 var
+R68953:68955 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R68960:68962 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R68957:68957 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R68956:68956 SLF.WPgen <> f:235 var
+R68958:68959 SLF.LibSepReference <> :trm:trm_scope:'()' not
+R68918:68920 SLF.LibSepReference <> val ind
+binder 68916:68916 <> f:237
+R68936:68938 SLF.LibInt <> ::Int_scope:'int' not
+binder 68934:68934 <> m:238
+R68946:68951 SLF.LibSepReference <> triple def
+R68985:68990 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68994:68994 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68992:68992 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R68991:68991 SLF.WPgen <> m:238 var
+R68966:68970 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R68971:68971 SLF.WPgen <> m:238 var
+R68953:68955 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R68960:68962 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R68957:68957 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R68956:68956 SLF.WPgen <> f:237 var
+R68958:68959 SLF.LibSepReference <> :trm:trm_scope:'()' not
+def 70112:70120 ExampleLocalFunWpgen succtwice
+R70124:70126 SLF.LibSepReference <> val ind
+R70133:70135 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R70222:70224 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R70136:70139 SLF.LibSepReference <> :trm:val_scope:'fun'_x_'=>'_x not
+R70142:70152 SLF.LibSepReference <> :trm:val_scope:'fun'_x_'=>'_x not
+R70140:70141 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''n' not
+R70153:70156 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70159:70161 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70181:70191 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70157:70158 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R70162:70162 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R70180:70180 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R70163:70167 SLF.LibSepReference <> :trm:trm_scope:'fun_'_x_'..'_x_'=>'_x not
+R70170:70173 SLF.LibSepReference <> :trm:trm_scope:'fun_'_x_'..'_x_'=>'_x not
+R70168:70169 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''m' not
+R70176:70178 SLF.LibSepReference <> :trm:trm_scope:x_'+'_x not
+R70174:70175 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''m' not
+R70192:70195 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70198:70200 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70206:70216 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R70196:70197 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''a' not
+R70203:70203 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R70201:70202 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R70204:70205 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''n' not
+R70219:70219 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R70217:70218 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R70220:70221 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''a' not
+prf 70412:70441 ExampleLocalFunWpgen triple_succtwice_using_xletval
+R70455:70457 SLF.LibInt <> ::Int_scope:'int' not
+binder 70453:70453 <> n:239
+R70463:70468 SLF.LibSepReference <> triple def
+binder 70501:70501 <> r:240
+R70506:70507 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R70517:70517 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R70509:70511 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R70508:70508 SLF.WPgen <> r:240 var
+R70513:70515 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R70512:70512 SLF.WPgen <> n:239 var
+R70488:70490 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\[]' not
+R70471:70479 SLF.WPgen ExampleLocalFunWpgen succtwice def
+R70481:70481 SLF.WPgen <> n:239 var
+prf 70713:70739 ExampleLocalFunWpgen triple_succtwice_using_xfun
+R70753:70755 SLF.LibInt <> ::Int_scope:'int' not
+binder 70751:70751 <> n:241
+R70761:70766 SLF.LibSepReference <> triple def
+binder 70799:70799 <> r:242
+R70804:70805 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R70815:70815 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R70807:70809 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R70806:70806 SLF.WPgen <> r:242 var
+R70811:70813 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R70810:70810 SLF.WPgen <> n:241 var
+R70786:70788 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\[]' not
+R70769:70777 SLF.WPgen ExampleLocalFunWpgen succtwice def
+R70779:70779 SLF.WPgen <> n:241 var
+R71097:71116 SLF.WPgen ExampleLocalFunWpgen <> mod
+prf 74964:74976 <> xconseq_lemma
+binder 74987:74988 <> Q1:243
+binder 74990:74991 <> Q2:244
+binder 74993:74993 <> H:245
+binder 74995:74995 <> F:246
+R75019:75024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R75001:75005 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R75000:75000 SLF.WPgen <> H:245 var
+R75006:75013 SLF.WPgen <> mkstruct def
+R75017:75018 SLF.WPgen <> Q1:243 var
+R75015:75015 SLF.WPgen <> F:246 var
+R75035:75040 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R75027:75032 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R75025:75026 SLF.WPgen <> Q1:243 var
+R75033:75034 SLF.WPgen <> Q2:244 var
+R75042:75046 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R75041:75041 SLF.WPgen <> H:245 var
+R75047:75054 SLF.WPgen <> mkstruct def
+R75058:75059 SLF.WPgen <> Q2:244 var
+R75056:75056 SLF.WPgen <> F:246 var
+R75253:75265 SLF.WPgen <> xconseq_lemma prfax
+R75317:75329 SLF.WPgen <> xconseq_lemma prfax
+prf 75624:75635 <> xframe_lemma
+binder 75646:75647 <> H1:247
+binder 75649:75650 <> H2:248
+binder 75652:75652 <> H:249
+binder 75654:75654 <> Q:250
+binder 75656:75657 <> Q1:251
+binder 75659:75659 <> F:252
+R75678:75683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R75665:75669 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R75664:75664 SLF.WPgen <> H:249 var
+R75672:75675 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R75670:75671 SLF.WPgen <> H1:247 var
+R75676:75677 SLF.WPgen <> H2:248 var
+R75704:75709 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R75686:75690 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R75684:75685 SLF.WPgen <> H1:247 var
+R75691:75698 SLF.WPgen <> mkstruct def
+R75702:75703 SLF.WPgen <> Q1:251 var
+R75700:75700 SLF.WPgen <> F:252 var
+R75726:75731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R75719:75724 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'===>'_x not
+R75712:75716 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*+'_x not
+R75710:75711 SLF.WPgen <> Q1:251 var
+R75717:75718 SLF.WPgen <> H2:248 var
+R75725:75725 SLF.WPgen <> Q:250 var
+R75733:75737 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R75732:75732 SLF.WPgen <> H:249 var
+R75738:75745 SLF.WPgen <> mkstruct def
+R75749:75749 SLF.WPgen <> Q:250 var
+R75747:75747 SLF.WPgen <> F:252 var
+R76046:76057 SLF.WPgen <> xframe_lemma prfax
+R76133:76144 SLF.WPgen <> xframe_lemma prfax
+mod 76236:76263 <> ProofsWithStructuralXtactics
+R76273:76287 SLF.Rules ExamplePrograms <> mod
+prf 76321:76337 ProofsWithStructuralXtactics triple_incr_frame
+R76353:76355 SLF.LibSepReference <> loc def
+binder 76349:76349 <> p:253
+binder 76351:76351 <> q:254
+R76363:76365 SLF.LibInt <> ::Int_scope:'int' not
+binder 76359:76359 <> n:255
+binder 76361:76361 <> m:256
+R76371:76376 SLF.LibSepReference <> triple def
+R76434:76434 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R76446:76451 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R76459:76459 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R76436:76441 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76445:76445 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76435:76435 SLF.WPgen <> p:253 var
+R76443:76443 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R76442:76442 SLF.WPgen <> n:255 var
+R76453:76457 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76452:76452 SLF.WPgen <> q:254 var
+R76458:76458 SLF.WPgen <> m:256 var
+R76407:76410 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\*'_x not
+R76401:76405 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76400:76400 SLF.WPgen <> p:253 var
+R76406:76406 SLF.WPgen <> n:255 var
+R76412:76416 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76411:76411 SLF.WPgen <> q:254 var
+R76417:76417 SLF.WPgen <> m:256 var
+R76379:76385 SLF.LibSepReference <> trm_app constr
+R76392:76392 SLF.WPgen <> p:253 var
+R76387:76390 SLF.Rules ExamplePrograms incr def
+R76575:76579 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76575:76579 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R76886:76913 SLF.WPgen ProofsWithStructuralXtactics <> mod
+mod 77064:77071 <> WPgenRec
+R77097:77099 SLF.LibSepReference <> val ind
+ax 81226:81250 WPgenRec triple_app_fun_from_wpgen
+binder 81261:81262 <> vf:257
+binder 81264:81265 <> vx:258
+binder 81267:81267 <> x:259
+binder 81269:81270 <> t1:260
+binder 81272:81273 <> H':261
+binder 81275:81276 <> Q':262
+R81298:81303 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R81283:81285 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R81281:81282 SLF.WPgen <> vf:257 var
+R81286:81292 SLF.LibSepReference <> val_fun constr
+R81296:81297 SLF.WPgen <> t1:260 var
+R81294:81294 SLF.WPgen <> x:259 var
+R81336:81341 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R81306:81310 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R81304:81305 SLF.WPgen <> H':261 var
+R81311:81315 SLF.WPgen <> wpgen def
+R81334:81335 SLF.WPgen <> Q':262 var
+R81331:81332 SLF.WPgen <> t1:260 var
+R81324:81325 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R81318:81318 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R81320:81320 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R81323:81323 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R81319:81319 SLF.WPgen <> x:259 var
+R81321:81322 SLF.WPgen <> vx:258 var
+R81326:81328 Coq.Init.Datatypes <> nil constr
+R81342:81347 SLF.LibSepReference <> triple def
+R81368:81369 SLF.WPgen <> Q':262 var
+R81365:81366 SLF.WPgen <> H':261 var
+R81350:81356 SLF.LibSepReference <> trm_app constr
+R81361:81362 SLF.WPgen <> vx:258 var
+R81358:81359 SLF.WPgen <> vf:257 var
+def 82689:82698 WPgenRec wpgen_fun'
+R82708:82709 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R82705:82707 SLF.LibSepReference <> val ind
+R82710:82716 SLF.WPgen <> formula def
+binder 82701:82703 <> Fof:264
+R82721:82727 SLF.WPgen <> formula def
+binder 82736:82736 <> Q:265
+R82743:82750 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+R82753:82754 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+binder 82751:82752 <> vf:266
+R82859:82877 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\-*'_x not
+R82755:82756 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R82858:82858 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+binder 82764:82765 <> vx:267
+binder 82767:82768 <> H':268
+binder 82770:82771 <> Q':269
+R82808:82829 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R82794:82798 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R82792:82793 SLF.WPgen <> H':268 var
+R82799:82801 SLF.WPgen <> Fof:264 var
+R82806:82807 SLF.WPgen <> Q':269 var
+R82803:82804 SLF.WPgen <> vx:267 var
+R82830:82835 SLF.LibSepReference <> triple def
+R82856:82857 SLF.WPgen <> Q':269 var
+R82853:82854 SLF.WPgen <> H':268 var
+R82838:82844 SLF.LibSepReference <> trm_app constr
+R82849:82850 SLF.WPgen <> vx:267 var
+R82846:82847 SLF.WPgen <> vf:266 var
+R82878:82878 SLF.WPgen <> Q:265 var
+R82880:82881 SLF.WPgen <> vf:266 var
+def 83154:83162 WPgenRec wpgen_fun
+R83172:83173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R83169:83171 SLF.LibSepReference <> val ind
+R83174:83180 SLF.WPgen <> formula def
+binder 83165:83167 <> Fof:270
+R83185:83191 SLF.WPgen <> formula def
+binder 83200:83200 <> Q:271
+R83207:83214 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+R83217:83218 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+binder 83215:83216 <> vf:272
+R83271:83275 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\-*'_x not
+R83219:83220 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R83270:83270 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+binder 83228:83229 <> vx:273
+binder 83231:83232 <> Q':274
+R83244:83248 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R83235:83237 SLF.WPgen <> Fof:270 var
+R83242:83243 SLF.WPgen <> Q':274 var
+R83239:83240 SLF.WPgen <> vx:273 var
+R83249:83250 SLF.WPsem <> wp def
+R83268:83269 SLF.WPgen <> Q':274 var
+R83253:83259 SLF.LibSepReference <> trm_app constr
+R83264:83265 SLF.WPgen <> vx:273 var
+R83261:83262 SLF.WPgen <> vf:272 var
+R83276:83276 SLF.WPgen <> Q:271 var
+R83278:83279 SLF.WPgen <> vf:272 var
+prf 83414:83425 WPgenRec wpgen_fun_eq
+R83440:83442 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R83431:83439 SLF.WPgen WPgenRec wpgen_fun def
+R83443:83452 SLF.WPgen WPgenRec wpgen_fun' def
+R83477:83485 SLF.WPgen WPgenRec wpgen_fun def
+R83488:83497 SLF.WPgen WPgenRec wpgen_fun' def
+R83507:83515 SLF.LibEqual <> fun_ext_2 thm
+R83507:83515 SLF.LibEqual <> fun_ext_2 thm
+R83541:83553 SLF.LibSepReference SepSimplArgs himpl_antisym thm
+R83541:83553 SLF.LibSepReference SepSimplArgs himpl_antisym thm
+R83566:83580 SLF.LibSepReference SepSimplArgs himpl_hforall_r thm
+R83566:83580 SLF.LibSepReference SepSimplArgs himpl_hforall_r thm
+R83603:83620 SLF.LibSepReference SepSimplArgs hforall_specialize thm
+R83603:83620 SLF.LibSepReference SepSimplArgs hforall_specialize thm
+R83656:83668 SLF.LibSepReference SepSimplArgs hwand_hpure_l thm
+R83656:83668 SLF.LibSepReference SepSimplArgs hwand_hpure_l thm
+R83656:83668 SLF.LibSepReference SepSimplArgs hwand_hpure_l thm
+R83656:83668 SLF.LibSepReference SepSimplArgs hwand_hpure_l thm
+R83698:83705 SLF.WPsem <> wp_equiv thm
+R83698:83705 SLF.WPsem <> wp_equiv thm
+R83698:83705 SLF.WPsem <> wp_equiv thm
+R83990:83998 SLF.WPgen WPgenRec wpgen_fun def
+binder 84005:84005 <> x:275
+not 83965:83965 WPgenRec :::'Fun'_x_':='_x
+def 85075:85083 WPgenRec wpgen_fix
+R85093:85094 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R85090:85092 SLF.LibSepReference <> val ind
+R85098:85099 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R85095:85097 SLF.LibSepReference <> val ind
+R85100:85106 SLF.WPgen <> formula def
+binder 85086:85088 <> Fof:276
+R85111:85117 SLF.WPgen <> formula def
+binder 85126:85126 <> Q:277
+R85133:85140 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+R85143:85144 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\forall'_x_'..'_x_','_x not
+binder 85141:85142 <> vf:278
+R85200:85204 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'\-*'_x not
+R85145:85146 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+R85199:85199 SLF.LibSepReference SepSimplArgs ::hprop_scope:'\['_x_']' not
+binder 85154:85155 <> vx:279
+binder 85157:85158 <> Q':280
+R85173:85177 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R85161:85163 SLF.WPgen <> Fof:276 var
+R85171:85172 SLF.WPgen <> Q':280 var
+R85168:85169 SLF.WPgen <> vx:279 var
+R85165:85166 SLF.WPgen <> vf:278 var
+R85178:85179 SLF.WPsem <> wp def
+R85197:85198 SLF.WPgen <> Q':280 var
+R85182:85188 SLF.LibSepReference <> trm_app constr
+R85193:85194 SLF.WPgen <> vx:279 var
+R85190:85191 SLF.WPgen <> vf:278 var
+R85205:85205 SLF.WPgen <> Q:277 var
+R85207:85208 SLF.WPgen <> vf:278 var
+R85638:85646 SLF.WPgen WPgenRec wpgen_fix def
+binder 85653:85653 <> f:281
+binder 85655:85655 <> x:282
+not 85611:85611 WPgenRec :::'Fix'_x_x_':='_x
+def 86349:86353 WPgenRec wpgen
+R86358:86360 SLF.WPgen <> ctx def
+binder 86356:86356 <> E:283
+R86366:86368 SLF.LibSepReference <> trm ind
+binder 86364:86364 <> t:284
+R86373:86379 SLF.WPgen <> formula def
+R86386:86393 SLF.WPgen <> mkstruct def
+R86401:86401 SLF.WPgen <> t:284 var
+R86412:86418 SLF.LibSepReference <> trm_val constr
+R86425:86433 SLF.WPgen <> wpgen_val def
+R86441:86447 SLF.LibSepReference <> trm_var constr
+R86454:86462 SLF.WPgen <> wpgen_var def
+R86464:86464 SLF.WPgen <> E:283 var
+R86472:86478 SLF.LibSepReference <> trm_fun constr
+R86488:86496 SLF.WPgen WPgenRec wpgen_fun def
+binder 86503:86503 <> v:287
+R86508:86512 SLF.WPgen <> wpgen:285 def
+R86520:86521 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R86515:86515 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86517:86517 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86519:86519 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86518:86518 SLF.WPgen <> v:287 var
+R86522:86522 SLF.WPgen <> E:283 var
+R86533:86539 SLF.LibSepReference <> trm_fix constr
+R86551:86559 SLF.WPgen WPgenRec wpgen_fix def
+binder 86566:86567 <> vf:288
+binder 86569:86569 <> v:289
+R86574:86578 SLF.WPgen <> wpgen:285 def
+R86587:86588 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R86581:86581 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86583:86583 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86586:86586 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86584:86585 SLF.WPgen <> vf:288 var
+R86594:86595 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R86589:86589 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86591:86591 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86593:86593 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86592:86592 SLF.WPgen <> v:289 var
+R86596:86596 SLF.WPgen <> E:283 var
+R86607:86613 SLF.LibSepReference <> trm_app constr
+R86624:86632 SLF.WPgen <> wpgen_app def
+R86635:86640 SLF.WPgen <> isubst def
+R86644:86644 SLF.WPgen <> t:284 var
+R86642:86642 SLF.WPgen <> E:283 var
+R86651:86657 SLF.LibSepReference <> trm_seq constr
+R86668:86676 SLF.WPgen <> wpgen_seq def
+R86692:86696 SLF.WPgen <> wpgen:285 def
+R86698:86698 SLF.WPgen <> E:283 var
+R86679:86683 SLF.WPgen <> wpgen:285 def
+R86685:86685 SLF.WPgen <> E:283 var
+R86708:86714 SLF.LibSepReference <> trm_let constr
+R86727:86735 SLF.WPgen <> wpgen_let def
+binder 86755:86755 <> v:290
+R86760:86764 SLF.WPgen <> wpgen:285 def
+R86772:86773 SLF.LibList <> ::liblist_scope:x_'::'_x not
+R86767:86767 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86769:86769 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86771:86771 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R86770:86770 SLF.WPgen <> v:290 var
+R86774:86774 SLF.WPgen <> E:283 var
+R86738:86742 SLF.WPgen <> wpgen:285 def
+R86744:86744 SLF.WPgen <> E:283 var
+R86785:86790 SLF.LibSepReference <> trm_if constr
+R86804:86811 SLF.WPgen <> wpgen_if def
+R86841:86845 SLF.WPgen <> wpgen:285 def
+R86847:86847 SLF.WPgen <> E:283 var
+R86828:86832 SLF.WPgen <> wpgen:285 def
+R86834:86834 SLF.WPgen <> E:283 var
+R86814:86819 SLF.WPgen <> isubst def
+R86821:86821 SLF.WPgen <> E:283 var
+prf 88273:88287 WPgenRec xfun_spec_lemma
+R88304:88305 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88301:88303 SLF.LibSepReference <> val ind
+binder 88299:88299 <> S:291
+binder 88312:88312 <> H:292
+binder 88314:88314 <> Q:293
+binder 88316:88318 <> Fof:294
+R88323:88323 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88420:88426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 88331:88332 <> vf:295
+R88339:88339 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88407:88415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 88347:88348 <> vx:296
+binder 88350:88351 <> H':297
+binder 88353:88354 <> Q':298
+R88357:88357 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88374:88378 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88360:88364 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R88358:88359 SLF.WPgen <> H':297 var
+R88365:88367 SLF.WPgen <> Fof:294 var
+R88369:88370 SLF.WPgen <> vx:296 var
+R88372:88373 SLF.WPgen <> Q':298 var
+R88379:88384 SLF.LibSepReference <> triple def
+R88405:88406 SLF.WPgen <> Q':298 var
+R88402:88403 SLF.WPgen <> H':297 var
+R88387:88393 SLF.LibSepReference <> trm_app constr
+R88398:88399 SLF.WPgen <> vx:296 var
+R88395:88396 SLF.WPgen <> vf:295 var
+R88416:88416 SLF.WPgen <> S:291 var
+R88418:88419 SLF.WPgen <> vf:295 var
+R88427:88427 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88459:88465 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 88435:88436 <> vf:299
+R88443:88447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88458:88458 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R88439:88439 SLF.WPgen <> S:291 var
+R88441:88442 SLF.WPgen <> vf:299 var
+R88449:88453 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R88448:88448 SLF.WPgen <> H:292 var
+R88454:88454 SLF.WPgen <> Q:293 var
+R88456:88457 SLF.WPgen <> vf:299 var
+R88467:88471 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R88466:88466 SLF.WPgen <> H:292 var
+R88472:88480 SLF.WPgen WPgenRec wpgen_fun def
+R88486:88486 SLF.WPgen <> Q:293 var
+R88482:88484 SLF.WPgen <> Fof:294 var
+R88525:88533 SLF.WPgen WPgenRec wpgen_fun def
+R88602:88609 SLF.WPsem <> wp_equiv thm
+R88602:88609 SLF.WPsem <> wp_equiv thm
+R88602:88609 SLF.WPsem <> wp_equiv thm
+R88621:88633 SLF.LibSepReference SepSimplArgs himpl_trans_r thm
+R88621:88633 SLF.LibSepReference SepSimplArgs himpl_trans_r thm
+R88739:88753 SLF.WPgen WPgenRec xfun_spec_lemma thm
+prf 89416:89432 WPgenRec xfun_nospec_lemma
+binder 89443:89443 <> H:300
+binder 89445:89445 <> Q:301
+binder 89447:89449 <> Fof:302
+R89454:89454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89561:89567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 89462:89463 <> vf:303
+R89471:89471 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89539:89549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89560:89560 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 89479:89480 <> vx:304
+binder 89482:89483 <> H':305
+binder 89485:89486 <> Q':306
+R89489:89489 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89506:89510 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R89492:89496 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R89490:89491 SLF.WPgen <> H':305 var
+R89497:89499 SLF.WPgen <> Fof:302 var
+R89501:89502 SLF.WPgen <> vx:304 var
+R89504:89505 SLF.WPgen <> Q':306 var
+R89511:89516 SLF.LibSepReference <> triple def
+R89537:89538 SLF.WPgen <> Q':306 var
+R89534:89535 SLF.WPgen <> H':305 var
+R89519:89525 SLF.LibSepReference <> trm_app constr
+R89530:89531 SLF.WPgen <> vx:304 var
+R89527:89528 SLF.WPgen <> vf:303 var
+R89551:89555 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R89550:89550 SLF.WPgen <> H:300 var
+R89556:89556 SLF.WPgen <> Q:301 var
+R89558:89559 SLF.WPgen <> vf:303 var
+R89569:89573 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'==>'_x not
+R89568:89568 SLF.WPgen <> H:300 var
+R89574:89582 SLF.WPgen WPgenRec wpgen_fun def
+R89588:89588 SLF.WPgen <> Q:301 var
+R89584:89586 SLF.WPgen <> Fof:302 var
+R89623:89631 SLF.WPgen WPgenRec wpgen_fun def
+R89688:89695 SLF.WPsem <> wp_equiv thm
+R89688:89695 SLF.WPsem <> wp_equiv thm
+R89688:89695 SLF.WPsem <> wp_equiv thm
+R89705:89717 SLF.LibSepReference SepSimplArgs himpl_trans_r thm
+R89705:89717 SLF.LibSepReference SepSimplArgs himpl_trans_r thm
+R89813:89829 SLF.WPgen WPgenRec xfun_nospec_lemma thm
+mod 90333:90355 <> WPgenRec.ExampleLocalFunWpgenRec
+R90365:90376 SLF.LibSepReference DemoPrograms <> mod
+R90378:90397 SLF.WPgen ExampleLocalFunWpgen <> mod
+R90700:90714 SLF.LibSepReference <> <> mod
+prf 91307:91322 WPgenRec.ExampleLocalFunWpgenRec triple_incrtwice
+R91336:91338 SLF.LibSepReference <> loc def
+binder 91334:91334 <> p:307
+R91344:91346 SLF.LibInt <> ::Int_scope:'int' not
+binder 91342:91342 <> n:308
+R91352:91357 SLF.LibSepReference <> triple def
+R91410:91415 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91419:91419 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91409:91409 SLF.WPgen <> p:307 var
+R91417:91417 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R91416:91416 SLF.WPgen <> n:308 var
+R91387:91391 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91386:91386 SLF.WPgen <> p:307 var
+R91392:91392 SLF.WPgen <> n:308 var
+R91360:91366 SLF.LibSepReference <> trm_app constr
+R91378:91378 SLF.WPgen <> p:307 var
+R91368:91376 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+R91458:91460 SLF.LibSepReference <> val ind
+binder 91456:91456 <> f:309
+R91476:91478 SLF.LibInt <> ::Int_scope:'int' not
+binder 91474:91474 <> m:310
+R91486:91491 SLF.LibSepReference <> triple def
+R91532:91537 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91541:91541 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91539:91539 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R91538:91538 SLF.WPgen <> m:310 var
+R91507:91511 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91512:91512 SLF.WPgen <> m:310 var
+R91494:91494 SLF.WPgen <> f:309 var
+R91495:91496 SLF.LibSepReference <> ::val_scope:'()' not
+R91458:91460 SLF.LibSepReference <> val ind
+binder 91456:91456 <> f:311
+R91476:91478 SLF.LibInt <> ::Int_scope:'int' not
+binder 91474:91474 <> m:312
+R91486:91491 SLF.LibSepReference <> triple def
+R91532:91537 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91541:91541 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91539:91539 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R91538:91538 SLF.WPgen <> m:312 var
+R91507:91511 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R91512:91512 SLF.WPgen <> m:312 var
+R91494:91494 SLF.WPgen <> f:311 var
+R91495:91496 SLF.LibSepReference <> ::val_scope:'()' not
+prf 92530:92546 WPgenRec.ExampleLocalFunWpgenRec triple_incrtwice'
+R92560:92562 SLF.LibSepReference <> loc def
+binder 92558:92558 <> p:313
+R92568:92570 SLF.LibInt <> ::Int_scope:'int' not
+binder 92566:92566 <> n:314
+R92576:92581 SLF.LibSepReference <> triple def
+R92634:92639 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R92643:92643 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R92633:92633 SLF.WPgen <> p:313 var
+R92641:92641 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R92640:92640 SLF.WPgen <> n:314 var
+R92611:92615 SLF.LibSepReference SepSimplArgs ::hprop_scope:x_'~~>'_x not
+R92610:92610 SLF.WPgen <> p:313 var
+R92616:92616 SLF.WPgen <> n:314 var
+R92584:92590 SLF.LibSepReference <> trm_app constr
+R92602:92602 SLF.WPgen <> p:313 var
+R92592:92600 SLF.WPgen ExampleLocalFunWpgen incrtwice def
+def 93520:93526 WPgenRec.ExampleLocalFunWpgenRec forloop
+R93530:93532 SLF.LibSepReference <> val ind
+R93539:93541 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R93739:93741 SLF.LibSepReference <> ::trm_scope:'<{'_x_'}>' not
+R93542:93545 SLF.LibSepReference <> :trm:val_scope:'fun'_x_x_'..'_x_'=>'_x not
+R93548:93548 SLF.LibSepReference <> :trm:val_scope:'fun'_x_x_'..'_x_'=>'_x not
+R93551:93551 SLF.LibSepReference <> :trm:val_scope:'fun'_x_x_'..'_x_'=>'_x not
+R93554:93564 SLF.LibSepReference <> :trm:val_scope:'fun'_x_x_'..'_x_'=>'_x not
+R93546:93547 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''a' not
+R93549:93550 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''b' not
+R93552:93553 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R93565:93568 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93571:93573 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93723:93733 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93569:93570 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''g' not
+R93574:93574 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R93722:93722 SLF.LibSepReference <> :trm:trm_scope:'('_x_')' not
+R93575:93579 SLF.LibSepReference <> :trm:trm_scope:'fix_'_x_x_'=>'_x not
+R93582:93582 SLF.LibSepReference <> :trm:trm_scope:'fix_'_x_x_'=>'_x not
+R93585:93598 SLF.LibSepReference <> :trm:trm_scope:'fix_'_x_x_'=>'_x not
+R93580:93581 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''g' not
+R93583:93584 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''i' not
+R93599:93602 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93605:93607 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93615:93628 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93603:93604 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''c' not
+R93610:93612 SLF.LibSepReference <> :trm:trm_scope:x_'<'_x not
+R93608:93609 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''i' not
+R93613:93614 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''b' not
+R93629:93631 SLF.LibSepReference <> :trm:trm_scope:'if'_x_'then'_x_'end' not
+R93634:93651 SLF.LibSepReference <> :trm:trm_scope:'if'_x_'then'_x_'end' not
+R93708:93721 SLF.LibSepReference <> :trm:trm_scope:'if'_x_'then'_x_'end' not
+R93632:93633 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''c' not
+R93657:93671 SLF.LibSepReference <> :trm:trm_scope:x_';'_x not
+R93654:93654 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R93652:93653 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''f' not
+R93655:93656 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''i' not
+R93672:93675 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93678:93680 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93687:93702 SLF.LibSepReference <> :trm:trm_scope:'let'_x_'='_x_'in'_x not
+R93676:93677 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''j' not
+R93683:93685 SLF.LibSepReference <> :trm:trm_scope:x_'+'_x not
+R93681:93682 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''i' not
+R93705:93705 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R93703:93704 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''g' not
+R93706:93707 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''j' not
+R93736:93736 SLF.LibSepReference <> :trm:trm_scope:x_x not
+R93734:93735 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''g' not
+R93737:93738 SLF.LibSepVar NotationForVariables :trm:trm_scope:'''a' not
+prf 94437:94450 WPgenRec.ExampleLocalFunWpgenRec triple_forloop
+R94467:94468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R94464:94466 SLF.LibInt <> ::Int_scope:'int' not
+R94469:94473 SLF.LibSepReference SepSimplArgs hprop def
+binder 94462:94462 <> I:315
+R94481:94483 SLF.LibInt <> ::Int_scope:'int' not
+binder 94477:94477 <> a:316
+binder 94479:94479 <> b:317
+R94489:94491 SLF.LibSepReference <> val ind
+binder 94487:94487 <> f:318
+R94503:94508 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R94498:94501 SLF.LibOrder <> ::comp_scope:x_'<='_x not
+R94497:94497 SLF.WPgen <> a:316 var
+R94502:94502 SLF.WPgen <> b:317 var
+R94509:94509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R94588:94594 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 94517:94517 <> i:319
+R94531:94538 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R94521:94524 SLF.LibOrder <> ::comp_scope:x_'<='_x_'<='_x not
+R94526:94529 SLF.LibOrder <> ::comp_scope:x_'<='_x_'<='_x not
+R94520:94520 SLF.WPgen <> a:316 var
+R94525:94525 SLF.WPgen <> i:319 var
+R94525:94525 SLF.WPgen <> i:319 var
+R94530:94530 SLF.WPgen <> b:317 var
+R94539:94544 SLF.LibSepReference <> triple def
+binder 94575:94575 <> u:320
+R94580:94580 SLF.WPgen <> I:315 var
+R94584:94584 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R94583:94583 SLF.WPgen <> i:319 var
+R94559:94559 SLF.WPgen <> I:315 var
+R94561:94561 SLF.WPgen <> i:319 var
+R94547:94547 SLF.WPgen <> f:318 var
+R94549:94549 SLF.WPgen <> i:319 var
+R94595:94600 SLF.LibSepReference <> triple def
+binder 94637:94637 <> r:321
+R94642:94642 SLF.WPgen <> I:315 var
+R94644:94644 SLF.WPgen <> b:317 var
+R94623:94623 SLF.WPgen <> I:315 var
+R94625:94625 SLF.WPgen <> a:316 var
+R94603:94609 SLF.WPgen WPgenRec.ExampleLocalFunWpgenRec forloop def
+R94611:94611 SLF.WPgen <> a:316 var
+R94613:94613 SLF.WPgen <> b:317 var
+R94615:94615 SLF.WPgen <> f:318 var
+R94706:94728 SLF.WPgen WPgenRec.ExampleLocalFunWpgenRec <> mod
+R94735:94742 SLF.WPgen WPgenRec <> mod

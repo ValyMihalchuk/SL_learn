@@ -1,0 +1,12 @@
+DIGEST 62ba7c6d9a15afb89a3e4b73159d4d59
+FSLF.LibString
+R455:464 SLF.LibTactics <> <> lib
+R466:475 SLF.LibReflect <> <> lib
+R502:507 Coq.Strings.String <> <> lib
+inst 699:710 <> Inhab_string
+R714:718 SLF.LibLogic <> Inhab class
+R720:725 Coq.Strings.String <> string ind
+R748:759 SLF.LibLogic <> Inhab_of_val thm
+R761:771 Coq.Strings.String <> EmptyString constr
+R748:759 SLF.LibLogic <> Inhab_of_val thm
+R761:771 Coq.Strings.String <> EmptyString constr

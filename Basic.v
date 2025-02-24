@@ -3,6 +3,7 @@
 Set Implicit Arguments.
 From SLF Require Import LibSepReference.
 Import ProgramSyntax DemoPrograms.
+
 Implicit Types n m : int.
 Implicit Types p q : loc.
 
@@ -263,8 +264,18 @@ Definition quadruple : val :=
        let 'm = 'n + 'n in
        'm + 'm }>.
 
+Lemma triple_quadruple : forall (n:int),
+  triple (quadruple n)
+    \[]
+    (fun r => \[r = 4*n]).
+Proof.
+xwp. xapp. xapp. xsimpl. math. Qed.       
+
 (** Specify and verify the function [quadruple] to express that it returns
     [4*n]. Follow the pattern of the previous proof. *)
+
+
+
 
 (* FILL IN HERE *)
 
@@ -282,6 +293,13 @@ Definition inplace_double : val :=
        let 'm = 'n + 'n in
        'p := 'm }>.
 
+
+Lemma triple_inplace_double : forall (n:int) (p:loc),
+  triple (inplace_double p)
+    (p~~>n)
+    (fun _ => (p~~>(2*n))).
+Proof.
+xwp. xapp. xapp. xapp. xsimpl. math. Qed.          
 (** Specify and verify the function [inplace_double], following the pattern of
     the first example, [triple_incr]. *)
 
@@ -503,7 +521,13 @@ Definition transfer : val :=
     State and prove a lemma called [triple_transfer], specifying the behavior of
     [transfer p q] in the case where [p] and [q] denote two distinct references.
     *)
-
+Lemma triple_transfer : forall (p q : loc) (n m : int),
+triple (transfer p q)
+(p~~>n \* q ~~>m)
+(fun _ => p~~>(n+m) \* q~~> 0).
+Proof.
+  xwp. xapp. xapp. xapp. xapp. xapp.
+xsimpl. Qed.
 (* FILL IN HERE *)
 
 (** [] *)
@@ -515,6 +539,15 @@ Definition transfer : val :=
     should take the form [triple (transfer p p) _ _]. *)
 
 (* FILL IN HERE *)
+
+Lemma triple_transfer_aliased : forall (p  : loc) (n  : int),
+triple (transfer p p)
+(p~~>n)
+(fun _ => p~~> 0).
+Proof.
+  xwp. xapp. xapp. xapp. xapp. xapp.
+xsimpl. Qed.
+
 
 (** [] *)
 
@@ -618,6 +651,17 @@ Qed.
     language of Separation Logic predicates. *)
 
 (* FILL IN HERE *)
+Lemma triple_ref_greater_abstract : forall (p:loc) (n:int),
+  triple (ref_greater p)
+    (p ~~> n)
+    (funloc q => \exists m, p ~~> n \* (q~~>m \* \[m > n])).
+Proof using.
+xwp. xapp. xapp. xapp. intros q. xsimpl. 
+  - auto. 
+  - math. 
+Qed.
+
+
 
 (** [] *)
 
@@ -775,7 +819,9 @@ Lemma triple_get_and_free : forall p v,
   triple (get_and_free p)
     (p ~~> v)
     (fun r => \[r = v]).
-Proof using. (* FILL IN HERE *) Admitted.
+Proof using.
+xwp. xapp. xapp. xval. xsimpl. auto.
+Qed. 
 
 (** [] *)
 
@@ -816,8 +862,14 @@ Lemma triple_two_dice :
   triple <{ two_dice () }>
     \[]
     (fun r => \exists n, \[r = val_int n] \* \[2 <= n <= 12]).
-Proof using. (* FILL IN HERE *) Admitted.
-
+Proof using.
+  xwp. xapp triple_rand. { math. }
+  intros n Hn.
+  xapp triple_rand. { math. }
+  intros m Hm.
+  xapp. xapp.
+  xsimpl. { auto. } { math. }
+Qed. 
 (** [] *)
 
 (* ################################################################# *)
@@ -956,7 +1008,7 @@ Proof using.
     function (which leverages classical logic) greatly simplifies the process of
     automatically performing substitutions after calls to [xapp].
 
-    We next perform the case analysis on the test [n <= 1]. *)
+    We next perform the case analysis on the test [n <= 1]. *) 
   xif.
 (** Doing so gives two cases.
 
@@ -1024,13 +1076,9 @@ Definition repeat_incr : val :=
     is the result after incrementing, [m] times, the reference [p]. Observe that
     this postcondition is only valid under the assumption that [m >= 0]. *)
 
-Lemma triple_repeat_incr : forall (m n:int) (p:loc),
-  m >= 0 ->
-  triple (repeat_incr p m)
-    (p ~~> n)
-    (fun _ => p ~~> (n + m)).
 
-(** **** Exercise: 2 stars, standard, especially useful (triple_repeat_incr)
+
+    (** **** Exercise: 2 stars, standard, especially useful (triple_repeat_incr)
 
     Prove the specification of the function [repeat_incr], by following the
     template of the proof of [triple_factorec'].
@@ -1039,7 +1087,31 @@ Lemma triple_repeat_incr : forall (m n:int) (p:loc),
     introducing [n] or [p], otherwise the induction principle obtained is too
     weak. *)
 
-Proof using. (* FILL IN HERE *) Admitted.
+
+Lemma triple_repeat_incr : forall (m n:int) (p:loc),
+  m >= 0 ->
+  triple (repeat_incr p m)
+    (p ~~> n)
+    (fun _ => p ~~> (n + m)).
+Proof using.
+intros m. induction_wf IH: (downto 0) m.
+intros n p Hm. unfold downto in IH.
+xwp. xapp. 
+xif.
+{ intros HmLT.
+  xapp. xapp.
+  xapp.
+  { math. }
+  { math. }
+  { xsimpl. math.  } }
+{ intros HmLT.
+  xval. xsimpl. math.
+} Qed.
+
+
+
+
+
 
 (** [] *)
 
@@ -1136,7 +1208,24 @@ Lemma triple_repeat_incr' : forall (p:loc) (n m:int),
   triple (repeat_incr p m)
     (p ~~> n)
     (fun _ => p ~~> (n + max 0 m)).
-Proof using. (* FILL IN HERE *) Admitted.
+Proof using.
+intros. gen n. induction_wf IH : (downto 0) m.
+intros n. xwp. xapp. xif; intros C.
+{ xapp. xapp. xapp. 
+  { math. }
+  { xsimpl. rewrite max_r.
+    -  rewrite max_r.
+      + math. 
+      + math. 
+    - math. }
+} 
+{
+  xval. xsimpl.  rewrite max_l.
+    - math.
+    - math.
+}
+Qed.
+
 
 (** [] *)
 
@@ -1182,7 +1271,19 @@ Lemma triple_step_transfer : forall p q n m,
     Verify the function [step_transfer]. Hint: to set up the induction, follow
     the pattern from [triple_repeat_incr']. *)
 
-Proof using. (* FILL IN HERE *) Admitted.
+Proof using.
+intros. gen n. gen m. intros m. induction_wf IH : (downto 0) m.
+intros H. intros n. xwp. xapp. xapp. xif; intros C.
+{ xapp. xapp. xapp. 
+{ math. }
+{ math. }
+{ xsimpl. math. }
+} 
+{
+xval. xsimpl.
+- math.
+- math.
+}
 
 (** [] *)
 
@@ -1256,8 +1357,16 @@ Lemma triple_factoimp_aux : forall (r:loc) (i n:int),
     (fun _ => r ~~> facto n).
 Proof using.
   introv. induction_wf IH: (upto n) i. introv Hn.
-  (* FILL IN HERE *) Admitted.
+  xwp. xapp. xif; intros C.
+  - xapp. xapp. xapp. xapp. xapp.
+    + math.
+    + math.
+    + rewrite facto_succ; math.
+    + xsimpl.
+  - xval. xsimpl. assert ( i = n); try math; try subst. auto.
+Qed.
 
+  
 (** [] *)
 
 (** **** Exercise: 3 stars, standard, especially useful (triple_factoimp)
@@ -1273,7 +1382,13 @@ Lemma triple_factoimp : forall n,
   triple (factoimp n)
     \[]
     (fun r => \[r = facto n]).
-Proof using. (* FILL IN HERE *) Admitted.
+Proof using.
+intros n Hn.
+xwp. xapp. intros p. xapp triple_factoimp_aux.
++ math.
++ rewrite facto_init; math.
++ xapp. xapp. xval. xsimpl. auto.
+
 
 (** [] *)
 
@@ -1387,22 +1502,42 @@ Lemma triple_factoimp_aux' : forall (r:loc) (i n:int),
     (fun _ => r ~~> facto n).
 Proof using.
   introv. induction_wf IH: (upto n) i. introv Hn.
-  (* FILL IN HERE *) Admitted.
-
+  destruct Hn as [[H1 H2]|H].
+  + xwp. xapp. subst. xif.
+    ++ intro contra. math.
+    ++ intros. xval. xsimpl. rewrite facto_init; try rewrite facto_init; try math.
+  + xwp. xapp. xif.
+    ++ intro Hin. xapp. xapp. xapp. xapp. xapp.
+      - math.
+      - right. math.
+      - rewrite facto_succ; math.
+      - xsimpl.
+    ++ intros C. xval. xsimpl. assert ( i = n); try math; try subst. auto.
+Qed.
 (** **** Exercise: 4 stars, standard, especially useful (triple_factoimp')
 
     Refine the proof of [triple_factoimp] for a relaxed precondition accounting
     also for the case [n = 0]. Hint: use the tactic [destruct (classic (n = 0))]
     to perform a case analysis on whether [n] is zero; but make sure to perform
     the case analysis as late in the proof as possible, in order to avoid
-    duplication. *)
+    duplication.  *)
 
+
+   
 Lemma triple_factoimp' : forall n,
   n >= 0 ->
   triple (factoimp n)
     \[]
     (fun r => \[r = facto n]).
-Proof using. (* FILL IN HERE *) Admitted.
+Proof using.
+intros n Hn.
+xwp. xapp. intros p. xapp triple_factoimp_aux'.
++ destruct (classic (n = 0)).
+  ++ left. math.
+  ++ right. math.  
++ rewrite facto_init; math.
++ xapp. xapp. xval. xsimpl. auto.
+Qed.
 
 (* ################################################################# *)
 (** * Historical Notes *)
